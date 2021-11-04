@@ -1,0 +1,179 @@
+<!doctype html>
+<html> 
+<head> 
+<title>SHA512 Hash Generator Online</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Generate the SHA512 hash of any string."> 
+	<meta name="keywords" content="SHA512 Hash Generator, SHA512 Online" >
+	<link href="style.css?ver=2" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/sha512.js"></script>	
+<script language="javascript" type="text/javascript">
+function clearall()
+{	
+	document.getElementById('txt1').value = "";
+	document.getElementById('txt2').value = "";
+	document.getElementById("txt1").focus();
+}
+function replaceAll(find, replace, str) {
+  return str.replace(new RegExp(find, 'g'), replace);
+}
+function OnCopy()
+{
+	var copyText = document.getElementById("txt2");
+
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+  document.execCommand("copy");
+}
+function convertcase()
+{
+	var strInputText 	=  document.getElementById( "txt2" ).value;
+	
+	if( document.getElementById("Lowercase_hash").checked )
+		strInputText = strInputText.toLowerCase();
+	else
+		strInputText = strInputText.toUpperCase();
+
+	document.getElementById('txt2').value = strInputText;	
+}
+function calc()
+{
+	var strTxt = document.getElementById('txt1').value;
+	if( strTxt.length == 0 )
+	{
+		document.getElementById('txt2').value = "";
+		return;
+	}
+	
+	if( document.getElementById("separate_lines").checked )
+	{
+		var strLines=[];
+		if( strTxt.search("\r\n")>0 )strLines = strTxt.split("\r\n");
+		else if( strTxt.search("\r")>0 ) strLines = strTxt.split("\r");
+		else if( strTxt.search("\n")>0  )strLines = strTxt.split("\n");
+		else strLines[0]=strTxt;
+		
+	//	var strLines = strTxt.split("\n");
+		var strHashALL = "";
+		var strHashTmp = "";
+		for( var i in strLines ) 
+		{
+			if( strLines[i].length != 0 )
+			{
+				strHashTmp = hex_sha512( strLines[i]  );
+				strHashTmp = strHashTmp.toUpperCase();
+			}
+			else
+				strHashTmp = "";
+			strHashALL += strHashTmp + "\n";
+		}
+		document.getElementById('txt2').value = strHashALL;			
+	}
+	else
+	{
+		if( strTxt.search("\r")>0 ) strTxt=replaceAll( "\r", "", strTxt );
+		var strHash = hex_sha512( strTxt );
+		strHash = strHash.toUpperCase();
+	
+		document.getElementById('txt2').value = strHash;
+	}
+	convertcase();
+}
+function OpenURL( strURL )
+{
+	var win = window.open( strURL, '_blank' );
+	win.focus(); 
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container" >
+	
+	<div id="header">
+		<div id="Logo"></div>
+		<div id="LogoText">SHA512 Hash Generator</div>
+	</div><!-- header -->
+
+	<div class="sec_blank"></div>
+	
+<div class="PASSAD">
+	
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- password top -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-5162651395794188"
+     data-ad-slot="2766522363"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>		
+	
+</div>	
+	
+	<div class="sec_tips">
+	<p>This online tool allows you to generate the SHA512 hash of any string. The SHA512 hash can not be decrypted if the text you entered is complicated enough.</p>
+	<p>Enter your text below:</p>
+	 </div>
+	<textarea id="txt1" class="texts" onkeyup="calc();" autofocus></textarea>
+	<div class="btn_parent">
+		<div class="CalcHash" onclick="return calc();">Generate</div>
+		<div class="CalcHash" onclick="return clearall();">Clear All</div>
+		
+		<div class="CalcHash" onclick="OpenURL('https://passwordsgenerator.net/md5-hash-generator/');">MD5</div>
+		<div class="CalcHash" onclick="OpenURL('https://passwordsgenerator.net/sha1-hash-generator/');">SHA1</div>
+		<div class="CalcHash" onclick="OpenURL('https://passwordsgenerator.net/sha256-hash-generator/');">SHA256</div>
+		<div class="CalcHash2" onclick="OpenURL('https://passwordsgenerator.net/');">Password Generator</div>
+			
+	</div>
+	
+	<div class="btn_parent">
+		<div class="check_box">
+			<label><input type="checkbox" name="separate_lines" id="separate_lines" onclick="calc();">Treat each line as a separate string</label>
+			<label><input type="checkbox" name="Lowercase_hash" id="Lowercase_hash" onclick="convertcase();">Lowercase hash(es)</label>
+			</div>
+	</div>
+	
+	<div class="sec_tips">
+	<p>SHA512 Hash of your string:
+		<a href="#" onclick="OnCopy();return false;">[ Copy to clipboard ]</a>
+		
+		</p>
+	</div>
+	
+	<textarea id="txt2" class="texts noboder" ></textarea>
+
+	<div class="sec_blank"></div>
+	
+	<div id="sec_btm">
+		<p>Copyright &copy; 2012 - 2020 <a href="http://PasswordsGenerator.net" title="Password Generator">PasswordsGenerator.net</a>. All Rights Reserved.</p>
+		<p></p>
+	</div><!-- sec_btm -->
+
+<div style="clear:both"></div>
+</div><!-- container -->
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//gifmaker.me/stats/matomo/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+</body> 
+</html>
