@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="ru" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>SHA-2 — Википедия</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":[",\t."," \t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","январь","февраль","март","апрель","май","июнь","июль","август","сентябрь","октябрь","ноябрь","декабрь"],"wgRequestId":"47f0a9de-30c5-4798-b5fe-815d908505be","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"SHA-2","wgTitle":"SHA-2","wgCurRevisionId":116346607,"wgRevisionId":116346607,"wgArticleId":1399023,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Википедия:Статьи с некорректным использованием шаблонов:Cite web (не указан язык)","Страницы, использующие волшебные ссылки ISBN",
+"Страницы, использующие волшебные ссылки RFC","ПРО:ИТ:Статьи по алфавиту","ПРО:ИТ:Последняя правка: в текущем году","Википедия:Статьи с источниками из Викиданных","Википедия:Глобализировать","Википедия:Статьи с нерабочими ссылками","Хеш-функции","Криптографические хеш-функции","Royalty Free"],"wgPageContentLanguage":"ru","wgPageContentModel":"wikitext","wgRelevantPageName":"SHA-2","wgRelevantArticleId":1399023,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"accuracy":{"levels":1}}},"wgStableRevisionId":116346607,"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsFlags":10,"wgVisualEditor":{"pageLanguageCode":"ru","pageLanguageDir":"ltr",
+"pageVariantFallbacks":"ru"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgULSCurrentAutonym":"русский","wgNoticeProject":"wikipedia","wgEditSubmitButtonLabelPublish":!0,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":!0,"wgGENewcomerTasksGuidanceEnabled":!0,"wgGEAskQuestionEnabled":!0,"wgGELinkRecommendationsFrontendEnabled":!0,"wgCentralAuthMobileDomain":!1,"wgWikibaseItemId":"Q1968605"};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.flaggedRevs.icons":"ready","oojs-ui-core.styles":"ready","oojs-ui.styles.indicators":"ready","mediawiki.widgets.styles":"ready","oojs-ui-core.icons":"ready","ext.cite.styles":"ready","skins.vector.styles.legacy":"ready","ext.flaggedRevs.basic":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready"
+,"ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","ext.scribunto.logs","site","mediawiki.page.ready","mediawiki.toc","skins.vector.legacy.js","ext.flaggedRevs.advanced","ext.gadget.collapserefs","ext.gadget.directLinkToCommons","ext.gadget.referenceTooltips","ext.gadget.logo","ext.gadget.edittop","ext.gadget.blpEditNotice","ext.gadget.wikibugs","ext.gadget.sidebarRelated","ext.gadget.navboxNavigation","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.centralauth.centralautologin","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});mw.user.options.set({"variant":"ru"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=ru&amp;modules=ext.cite.styles%7Cext.flaggedRevs.basic%2Cicons%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.widgets.styles%7Coojs-ui-core.icons%2Cstyles%7Coojs-ui.styles.indicators%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=ru&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=ru&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<noscript><link rel="stylesheet" href="/w/load.php?lang=ru&amp;modules=noscript&amp;only=styles&amp;skin=vector"/></noscript>
+<meta name="generator" content="MediaWiki 1.38.0-wmf.5"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta property="og:title" content="SHA-2 — Википедия"/>
+<meta property="og:type" content="website"/>
+<link rel="preconnect" href="//upload.wikimedia.org"/>
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//ru.m.wikipedia.org/wiki/SHA-2"/>
+<link rel="alternate" type="application/x-wiki" title="Править" href="/w/index.php?title=SHA-2&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Википедия (ru)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//ru.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://ru.wikipedia.org/wiki/SHA-2"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-SHA-2 rootpage-SHA-2 skin-vector action-view skin-vector-legacy"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"><!-- CentralNotice --></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading" >SHA-2</h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">Материал из Википедии — свободной энциклопедии</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Перейти к навигации</a>
+		<a class="mw-jump-link" href="#searchInput">Перейти к поиску</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="ru" dir="ltr"><div class="mw-parser-output"><div class="hatnote navigation-not-searchable noprint dabhide">У этого термина существуют и другие значения, см. <a href="/wiki/SHA" class="mw-disambig" title="SHA">SHA</a>.</div>
+<table class="infobox" style="" data-name="Карточка хеш-функции"><tbody><tr><th colspan="2" scope="colgroup" class="infobox-above" style="">SHA-2</th></tr>
+<tr>
+<th scope="row" class="plainlist">Создан</th>
+<td class="plainlist">
+<span data-wikidata-property-id="P571" class="no-wikidata"><a href="/wiki/2002" class="mw-redirect" title="2002">2002</a></span></td>
+</tr>
+<tr>
+<th scope="row" class="plainlist">Опубликован</th>
+<td class="plainlist">
+<a href="/wiki/2002" class="mw-redirect" title="2002">2002</a></td>
+</tr>
+<tr>
+<th scope="row" class="plainlist">Предшественник</th>
+<td class="plainlist">
+<span data-wikidata-claim-id="Q1968605$a846a2ce-476c-d3bc-8377-416208470a7f" class="wikidata-claim" data-wikidata-property-id="P155"><span class="wikidata-snak wikidata-main-snak"><a href="/wiki/SHA-1" title="SHA-1">SHA-1</a></span></span></td>
+</tr>
+<tr>
+<th scope="row" class="plainlist">Преемник</th>
+<td class="plainlist">
+<span data-wikidata-claim-id="Q1968605$6f869e92-4f4b-f218-6f35-6a38c1b3cea8" class="wikidata-claim" data-wikidata-property-id="P156"><span class="wikidata-snak wikidata-main-snak"><a href="/wiki/SHA-3" title="SHA-3">Keccak</a></span></span></td>
+</tr>
+<tr>
+<th scope="row" class="plainlist">Размер хеша</th>
+<td class="plainlist">
+224, 256, 384 или 512 <a href="/wiki/%D0%91%D0%B8%D1%82" title="Бит">бит</a></td>
+</tr>
+<tr>
+<th scope="row" class="plainlist">Число раундов</th>
+<td class="plainlist">
+64 или 80</td>
+</tr>
+<tr>
+<th scope="row" class="plainlist">Тип</th>
+<td class="plainlist">
+<a href="/wiki/%D0%A5%D0%B5%D1%88-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F" title="Хеш-функция">семейство хеш-функций</a></td>
+</tr>
+</tbody></table>
+<p><b>SHA-2</b> (<a href="/wiki/%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA" title="Английский язык">англ.</a> <i>Secure Hash Algorithm Version 2</i>&#160;— безопасный алгоритм хеширования, версия 2)&#160;— семейство <a href="/wiki/%D0%9A%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F" title="Криптография">криптографических</a> <a href="/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC" title="Алгоритм">алгоритмов</a>&#160;— однонаправленных <a href="/wiki/%D0%A5%D0%B5%D1%88-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F" title="Хеш-функция">хеш-функций</a>, включающее в себя алгоритмы <i>SHA-224, SHA-256, SHA-384, SHA-512, SHA-512/256</i> и <i>SHA-512/224</i>.
+</p><p>Хеш-функции предназначены для создания «отпечатков» или «дайджестов» для сообщений произвольной длины. Применяются в различных приложениях или компонентах, связанных с <a href="/wiki/%D0%97%D0%B0%D1%89%D0%B8%D1%82%D0%B0_%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%B8" class="mw-redirect" title="Защита информации">защитой информации</a>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="ru" dir="ltr"><h2 id="mw-toc-heading">Содержание</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#История"><span class="tocnumber">1</span> <span class="toctext">История</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Алгоритм"><span class="tocnumber">2</span> <span class="toctext">Алгоритм</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Общее_описание"><span class="tocnumber">2.1</span> <span class="toctext">Общее описание</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Сравнение_хеш-функций"><span class="tocnumber">2.2</span> <span class="toctext">Сравнение хеш-функций</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="#Псевдокод"><span class="tocnumber">3</span> <span class="toctext">Псевдокод</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#SHA-256"><span class="tocnumber">3.1</span> <span class="toctext"><i>SHA-256</i></span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#Примеры"><span class="tocnumber">4</span> <span class="toctext">Примеры</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Криптоанализ"><span class="tocnumber">5</span> <span class="toctext">Криптоанализ</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Применение_и_сертификация"><span class="tocnumber">6</span> <span class="toctext">Применение и сертификация</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="#Сертификация"><span class="tocnumber">6.1</span> <span class="toctext">Сертификация</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#См._также"><span class="tocnumber">7</span> <span class="toctext">См. также</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#Примечания"><span class="tocnumber">8</span> <span class="toctext">Примечания</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#Литература"><span class="tocnumber">9</span> <span class="toctext">Литература</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#Ссылки"><span class="tocnumber">10</span> <span class="toctext">Ссылки</span></a></li>
+</ul>
+</div>
+
+<h2><span id=".D0.98.D1.81.D1.82.D0.BE.D1.80.D0.B8.D1.8F"></span><span class="mw-headline" id="История">История</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SHA-2&amp;veaction=edit&amp;section=1" class="mw-editsection-visualeditor" title="Редактировать раздел «История»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=SHA-2&amp;action=edit&amp;section=1" title="Редактировать раздел «История»">править код</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Хеш-функции <i>SHA-2</i> разработаны <a href="/wiki/%D0%90%D0%B3%D0%B5%D0%BD%D1%82%D1%81%D1%82%D0%B2%D0%BE_%D0%BD%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9_%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D0%B8_(%D0%A1%D0%A8%D0%90)" class="mw-redirect" title="Агентство национальной безопасности (США)">Агентством национальной безопасности США</a> и опубликованы <a href="/wiki/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%B8%D0%BD%D1%81%D1%82%D0%B8%D1%82%D1%83%D1%82_%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BE%D0%B2_%D0%B8_%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B9_(%D0%A1%D0%A8%D0%90)" class="mw-redirect" title="Национальный институт стандартов и технологий (США)">Национальным институтом стандартов и технологий</a> в <a href="/wiki/FIPS" class="mw-redirect" title="FIPS">федеральном стандарте обработки информации</a> <i>FIPS PUB 180-2</i> в августе 2002 года<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>. В этот стандарт также вошла хеш-функция <i><a href="/wiki/SHA-1" title="SHA-1">SHA-1</a></i>, разработанная в 1995 году. В феврале 2004 года в <i>FIPS PUB 180-2</i> была добавлена <i>SHA-224</i><sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup>. В октябре 2008 года вышла новая редакция стандарта&#160;— <i>FIPS PUB 180-3</i><sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>. В марте 2012 года вышла последняя на данный момент редакция <i>FIPS PUB 180-4</i>, в которой были добавлены функции <i>SHA-512/256</i> и <i>SHA-512/224</i>, основанные на SHA-512 (поскольку на 64-битных архитектурах SHA-512 работает быстрее, чем SHA-256)<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup>.
+</p><p>В июле 2006 года появился стандарт <a class="external mw-magiclink-rfc" rel="nofollow" href="https://tools.ietf.org/html/rfc4634">RFC 4634</a> «Безопасные хеш-алгоритмы США (<i>SHA</i> и <i>HMAC-SHA</i>)», описывающий <i>SHA-1</i> и семейство <i>SHA-2</i>.
+</p><p>Агентство национальной безопасности от лица <a href="/wiki/%D0%A1%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D1%91%D0%BD%D0%BD%D1%8B%D0%B5_%D0%A8%D1%82%D0%B0%D1%82%D1%8B_%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8" title="Соединённые Штаты Америки">государства</a> выпустило патент на <i>SHA-2</i><sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup> под лицензией <i><a href="/wiki/Royalty-free" title="Royalty-free">Royalty-free</a></i><sup id="cite_ref-6" class="reference"><a href="#cite_note-6">&#91;6&#93;</a></sup>.
+</p>
+<h2><span id=".D0.90.D0.BB.D0.B3.D0.BE.D1.80.D0.B8.D1.82.D0.BC"></span><span class="mw-headline" id="Алгоритм">Алгоритм</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SHA-2&amp;veaction=edit&amp;section=2" class="mw-editsection-visualeditor" title="Редактировать раздел «Алгоритм»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=SHA-2&amp;action=edit&amp;section=2" title="Редактировать раздел «Алгоритм»">править код</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span id=".D0.9E.D0.B1.D1.89.D0.B5.D0.B5_.D0.BE.D0.BF.D0.B8.D1.81.D0.B0.D0.BD.D0.B8.D0.B5"></span><span class="mw-headline" id="Общее_описание">Общее описание</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SHA-2&amp;veaction=edit&amp;section=3" class="mw-editsection-visualeditor" title="Редактировать раздел «Общее описание»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=SHA-2&amp;action=edit&amp;section=3" title="Редактировать раздел «Общее описание»">править код</a><span class="mw-editsection-bracket">]</span></span></h3>
+<div class="thumb tright"><div class="thumbinner" style="width:402px;"><a href="/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:SHA-2.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/7/7d/SHA-2.svg/400px-SHA-2.svg.png" decoding="async" width="400" height="282" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/7d/SHA-2.svg/600px-SHA-2.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/7d/SHA-2.svg/800px-SHA-2.svg.png 2x" data-file-width="836" data-file-height="590" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:SHA-2.svg" class="internal" title="Увеличить"></a></div>Схема одной итерации алгоритмов SHA-2</div></div></div>
+<p>Хеш-функции семейства SHA-2 построены на основе <a href="/wiki/%D0%A1%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0_%D0%9C%D0%B5%D1%80%D0%BA%D0%BB%D0%B0_%E2%80%94_%D0%94%D0%B0%D0%BC%D0%B3%D0%BE%D1%80%D0%B0" title="Структура Меркла — Дамгора">структуры Меркла&#160;— Дамгора</a>.
+</p><p>Исходное сообщение после дополнения разбивается на блоки, каждый блок&#160;— на 16 слов. Алгоритм пропускает каждый блок сообщения через цикл с 64 или 80 итерациями (раундами). На каждой итерации 2 слова преобразуются, функцию преобразования задают остальные слова. Результаты обработки каждого блока складываются, <a href="/wiki/%D0%A1%D1%83%D0%BC%D0%BC%D0%B0_(%D0%BC%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0)" title="Сумма (математика)">сумма</a> является значением хеш-функции. Тем не менее, инициализация внутреннего состояния производится результатом обработки предыдущего блока. Поэтому независимо обрабатывать блоки и складывать результаты нельзя. Подробнее&#160;— см. <a href="/wiki/SHA-2#Псевдокод" title="SHA-2">псевдокод</a>.
+</p><p>Алгоритм использует следующие битовые операции:
+</p>
+<ul><li>ǁ&#160;— <a href="/wiki/%D0%9A%D0%BE%D0%BD%D0%BA%D0%B0%D1%82%D0%B5%D0%BD%D0%B0%D1%86%D0%B8%D1%8F" title="Конкатенация">конкатенация</a>,</li>
+<li>+&#160;— <a href="/wiki/%D0%A1%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5" title="Сложение">сложение</a>,</li>
+<li><i>and</i>&#160;— <a href="/wiki/%D0%9A%D0%BE%D0%BD%D1%8A%D1%8E%D0%BD%D0%BA%D1%86%D0%B8%D1%8F#Программирование" title="Конъюнкция">побитовое «И»</a>,</li>
+<li><i>xor</i>&#160;— <a href="/wiki/%D0%A1%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BF%D0%BE_%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8E_2#Программирование" class="mw-redirect" title="Сложение по модулю 2">исключающее «ИЛИ»</a>,</li>
+<li><i>shr</i> (shift right)&#160;— <a href="/wiki/%D0%91%D0%B8%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8#Логический_сдвиг" class="mw-redirect" title="Битовые операции">логический сдвиг вправо</a>,</li>
+<li><i>rotr</i> (rotate right)&#160;— <a href="/wiki/%D0%91%D0%B8%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8#Циклический_сдвиг" class="mw-redirect" title="Битовые операции">циклический сдвиг вправо</a>.</li></ul>
+<h3><span id=".D0.A1.D1.80.D0.B0.D0.B2.D0.BD.D0.B5.D0.BD.D0.B8.D0.B5_.D1.85.D0.B5.D1.88-.D1.84.D1.83.D0.BD.D0.BA.D1.86.D0.B8.D0.B9"></span><span class="mw-headline" id="Сравнение_хеш-функций">Сравнение хеш-функций</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SHA-2&amp;veaction=edit&amp;section=4" class="mw-editsection-visualeditor" title="Редактировать раздел «Сравнение хеш-функций»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=SHA-2&amp;action=edit&amp;section=4" title="Редактировать раздел «Сравнение хеш-функций»">править код</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>В следующей таблице показаны некоторые технические характеристики различных вариантов SHA-2. «Внутреннее состояние» обозначает промежуточную хеш-сумму после обработки очередного блока данных:
+</p>
+<table border="1" class="wikitable">
+<tbody><tr>
+<th>Хеш-функция
+</th>
+<th>Длина дайджеста сообщения (бит)
+</th>
+<th>Длина внутреннего состояния (бит)
+</th>
+<th>Длина блока (бит)
+</th>
+<th>Максимальная <br /> длина сообщения (бит)
+</th>
+<th>Длина слова (бит)
+</th>
+<th>Количество итераций в цикле
+</th>
+<th>Скорость (MiB/s)<sup id="cite_ref-7" class="reference"><a href="#cite_note-7">&#91;7&#93;</a></sup>
+</th></tr>
+<tr align="center">
+<td><i>SHA‑256</i>, <i>SHA‑224</i></td>
+<td>256/224</td>
+<td>256 (8&#160;×&#160;32)</td>
+<td>512</td>
+<td>2<sup>64</sup> − 1</td>
+<td>32</td>
+<td>64
+</td>
+<td>139
+</td></tr>
+<tr align="center">
+<td><i>SHA‑512</i>, <i>SHA‑384</i>, <i>SHA‑512/256</i>, <i>SHA‑512/224</i></td>
+<td>512/384/256/224</td>
+<td>512 (8&#160;×&#160;64)</td>
+<td>1024</td>
+<td>2<sup>128</sup> − 1</td>
+<td>64</td>
+<td>80
+</td>
+<td>154
+</td></tr></tbody></table>
+<h2><span id=".D0.9F.D1.81.D0.B5.D0.B2.D0.B4.D0.BE.D0.BA.D0.BE.D0.B4"></span><span class="mw-headline" id="Псевдокод">Псевдокод</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SHA-2&amp;veaction=edit&amp;section=5" class="mw-editsection-visualeditor" title="Редактировать раздел «Псевдокод»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=SHA-2&amp;action=edit&amp;section=5" title="Редактировать раздел «Псевдокод»">править код</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="SHA-256"><i>SHA-256</i></span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SHA-2&amp;veaction=edit&amp;section=6" class="mw-editsection-visualeditor" title="Редактировать раздел «SHA-256»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=SHA-2&amp;action=edit&amp;section=6" title="Редактировать раздел «SHA-256»">править код</a><span class="mw-editsection-bracket">]</span></span></h3>
+<pre><span style="color: green;"><i>Пояснения:</i>
+ Все переменные беззнаковые, имеют размер 32 бита и при вычислениях суммируются по модулю 2<sup>32</sup>
+ <i>message</i>&#160;— исходное двоичное сообщение
+ <i>m</i>&#160;— преобразованное сообщение</span>
+<span style="color: green;">
+ <i>Инициализация переменных</i>
+ (первые 32 бита <i>дробных частей</i> квадратных корней первых восьми простых чисел [от 2 до 19]):</span>
+h0&#160;:= 0x6A09E667
+h1&#160;:= 0xBB67AE85
+h2&#160;:= 0x3C6EF372
+h3&#160;:= 0xA54FF53A
+h4&#160;:= 0x510E527F
+h5&#160;:= 0x9B05688C
+h6&#160;:= 0x1F83D9AB
+h7&#160;:= 0x5BE0CD19
+
+<span style="color:green;"><i>Таблица констант</i></span>
+<span style="color:green;">(первые 32 бита <i>дробных частей</i> кубических корней первых 64 простых чисел [от 2 до 311]):</span>
+k&#91;0..63&#93;&#160;:=
+   0x428A2F98, 0x71374491, 0xB5C0FBCF, 0xE9B5DBA5, 0x3956C25B, 0x59F111F1, 0x923F82A4, 0xAB1C5ED5,
+   0xD807AA98, 0x12835B01, 0x243185BE, 0x550C7DC3, 0x72BE5D74, 0x80DEB1FE, 0x9BDC06A7, 0xC19BF174,
+   0xE49B69C1, 0xEFBE4786, 0x0FC19DC6, 0x240CA1CC, 0x2DE92C6F, 0x4A7484AA, 0x5CB0A9DC, 0x76F988DA,
+   0x983E5152, 0xA831C66D, 0xB00327C8, 0xBF597FC7, 0xC6E00BF3, 0xD5A79147, 0x06CA6351, 0x14292967,
+   0x27B70A85, 0x2E1B2138, 0x4D2C6DFC, 0x53380D13, 0x650A7354, 0x766A0ABB, 0x81C2C92E, 0x92722C85,
+   0xA2BFE8A1, 0xA81A664B, 0xC24B8B70, 0xC76C51A3, 0xD192E819, 0xD6990624, 0xF40E3585, 0x106AA070,
+   0x19A4C116, 0x1E376C08, 0x2748774C, 0x34B0BCB5, 0x391C0CB3, 0x4ED8AA4A, 0x5B9CCA4F, 0x682E6FF3,
+   0x748F82EE, 0x78A5636F, 0x84C87814, 0x8CC70208, 0x90BEFFFA, 0xA4506CEB, 0xBEF9A3F7, 0xC67178F2
+
+<span style="color:green;"><i>Предварительная обработка:</i></span>
+m&#160;:= message ǁ [<i>единичный бит</i>]
+m&#160;:= m ǁ [k <i>нулевых бит</i>], <span style="color:green;">где <b>k</b>&#160;— наименьшее неотрицательное число, такое что 
+                 (L + 1 + K) mod 512 = 448, где L — число бит в сообщении (<a href="/wiki/%D0%A1%D1%80%D0%B0%D0%B2%D0%BD%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C_%D0%BF%D0%BE_%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D1%8E" class="mw-redirect" title="Сравнимость по модулю">сравнима по модулю</a> 512 c 448)</span>
+m&#160;:= m ǁ <i>Длина</i>(message) <span style="color:green;">— длина исходного сообщения в битах в виде 64-битного числа
+            с <a href="/wiki/%D0%9F%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA_%D0%B1%D0%B0%D0%B9%D1%82%D0%BE%D0%B2" title="Порядок байтов">порядком байтов</a> от старшего к младшему</span>
+
+<span style="color:green;"><i>Далее сообщение обрабатывается последовательными порциями по 512 бит:</i></span>
+разбить сообщение на куски по 512 бит
+<b>для</b> каждого куска
+    разбить кусок на 16 слов длиной 32 бита (с <a href="/wiki/%D0%9F%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA_%D0%B1%D0%B0%D0%B9%D1%82%D0%BE%D0%B2" title="Порядок байтов">порядком байтов</a> от старшего к младшему внутри слова): w&#91;0..15&#93;
+
+    <span style="color:green;"><i>Сгенерировать дополнительные 48 слов:</i></span>
+    <b>для</b> i <b>от</b> 16 <b>до</b> 63
+        s0&#160;:= (w&#91;i-15&#93; <b>rotr</b> 7) <b>xor</b> (w&#91;i-15&#93; <b>rotr</b> 18) <b>xor</b> (w&#91;i-15&#93; <b>shr</b> 3)
+        s1&#160;:= (w&#91;i-2&#93; <b>rotr</b> 17) <b>xor</b> (w&#91;i-2&#93; <b>rotr</b> 19) <b>xor</b> (w&#91;i-2&#93; <b>shr</b> 10)
+        w&#91;i&#93;&#160;:= w&#91;i-16&#93; <b>+</b> s0 <b>+</b> w&#91;i-7&#93; <b>+</b> s1
+
+    <span style="color:green;"><i>Инициализация вспомогательных переменных:</i></span>
+    a&#160;:= h0
+    b&#160;:= h1
+    c&#160;:= h2
+    d&#160;:= h3
+    e&#160;:= h4
+    f&#160;:= h5
+    g&#160;:= h6
+    h&#160;:= h7
+
+    <span style="color:green;"><i>Основной цикл:</i></span>
+    <b>для</b> i <b>от</b> 0 <b>до</b> 63
+        Σ0&#160;:= (a <b>rotr</b> 2) <b>xor</b> (a <b>rotr</b> 13) <b>xor</b> (a <b>rotr</b> 22)
+        Ma&#160;:= (a <b>and</b> b) <b>xor</b> (a <b>and</b> c) <b>xor</b> (b <b>and</b> c)
+        t2&#160;:= Σ0 + Ma
+        Σ1&#160;:= (e <b>rotr</b> 6) <b>xor</b> (e <b>rotr</b> 11) <b>xor</b> (e <b>rotr</b> 25)
+        Ch&#160;:= (e <b>and</b> f) <b>xor</b> ((<b>not</b> e) <b>and</b> g)
+        t1&#160;:= h + Σ1 + Ch + k&#91;i&#93; + w&#91;i&#93;
+
+        h&#160;:= g
+        g&#160;:= f
+        f&#160;:= e
+        e&#160;:= d + t1
+        d&#160;:= c
+        c&#160;:= b
+        b&#160;:= a
+        a&#160;:= t1 + t2
+
+    <span style="color:green;"><i>Добавить полученные значения к ранее вычисленному результату:</i></span>
+    h0&#160;:= h0 + a
+    h1&#160;:= h1 + b 
+    h2&#160;:= h2 + c
+    h3&#160;:= h3 + d
+    h4&#160;:= h4 + e
+    h5&#160;:= h5 + f
+    h6&#160;:= h6 + g 
+    h7&#160;:= h7 + h
+
+<span style="color:green;"><i>Получить итоговое значение хеша:</i></span>
+digest = hash = h0 ǁ h1 ǁ h2 ǁ h3 ǁ h4 ǁ h5 ǁ h6 ǁ h7
+</pre>
+<p><i>SHA-224</i> идентичен <i>SHA-256</i>, за исключением:
+</p>
+<ul><li>для инициализации переменных <code>h0</code>—<code>h7</code> используются другие начальные значения,</li>
+<li>в итоговом хеше опускается значение <code>h7</code>.</li></ul>
+<pre><span style="color:green;"><i>Начальные значения переменных <code>h0</code>—<code>h7</code> в SHA-224:</i></span>
+h0&#160;:= 0xC1059ED8
+h1&#160;:= 0x367CD507
+h2&#160;:= 0x3070DD17
+h3&#160;:= 0xF70E5939
+h4&#160;:= 0xFFC00B31
+h5&#160;:= 0x68581511
+h6&#160;:= 0x64F98FA7
+h7&#160;:= 0xBEFA4FA4
+</pre>
+<p><i>SHA-512</i> имеет идентичную структуру, но:
+</p>
+<ul><li>слова имеют длину 64 бита,</li>
+<li>используется 80 раундов вместо 64,</li>
+<li>сообщение разбито на чанки по 1024 бит,</li>
+<li>начальные значения переменных и константы расширены до 64 бит,</li>
+<li>постоянные для каждого из 80 раундов&#160;— 80 первых простых чисел,</li>
+<li>сдвиг в операциях <code>rotr</code> и <code>shr</code> производится на другое число позиций.</li></ul>
+<pre><span style="color:green;"><i>Начальные значения переменных <code>h0</code>—<code>h7</code> в SHA-512:</i></span>
+h0&#160;:= 0x6a09e667f3bcc908, 
+h1&#160;:= 0xbb67ae8584caa73b, 
+h2&#160;:= 0x3c6ef372fe94f82b, 
+h3&#160;:= 0xa54ff53a5f1d36f1, 
+h4&#160;:= 0x510e527fade682d1, 
+h5&#160;:= 0x9b05688c2b3e6c1f, 
+h6&#160;:= 0x1f83d9abfb41bd6b, 
+h7&#160;:= 0x5be0cd19137e2179
+</pre>
+<p>SHA-384 идентичен SHA-512, за исключением:
+</p>
+<ul><li>переменные <code>h0</code>—<code>h7</code> имеют другие начальные значения,</li>
+<li>в итоговом хеше опускаются значения <code>h6</code> и <code>h7</code>.</li></ul>
+<pre><span style="color:green;"><i>Начальные значения переменных <code>h0</code>—<code>h7</code> в SHA-384</i>
+(первые 64 бита дробных частей квадратных корней простых чисел с 9-го по 16-е [от 23 до 53]):</span>
+h0&#160;:= CBBB9D5DC1059ED8
+h1&#160;:= 629A292A367CD507
+h2&#160;:= 9159015A3070DD17
+h3&#160;:= 152FECD8F70E5939
+h4&#160;:= 67332667FFC00B31
+h5&#160;:= 8EB44A8768581511
+h6&#160;:= DB0C2E0D64F98FA7
+h7&#160;:= 47B5481DBEFA4FA4
+</pre>
+<p><i>SHA-512/256</i> идентичен SHA-512, за исключением:
+</p>
+<ul><li>переменные <code>h0</code>—<code>h7</code> имеют другие начальные значения,</li>
+<li>итоговый хеш обрезается до левых 256 бит.</li></ul>
+<pre><span style="color:green;"><i>Начальные значения переменных <code>h0</code>—<code>h7</code> в SHA-512/256</i>:</span>
+h0&#160;:= 22312194FC2BF72C
+h1&#160;:= 9F555FA3C84C64C2
+h2&#160;:= 2393B86B6F53B151
+h3&#160;:= 963877195940EABD
+h4&#160;:= 96283EE2A88EFFE3
+h5&#160;:= BE5E1E2553863992
+h6&#160;:= 2B0199FC2C85B8AA
+h7&#160;:= 0EB72DDC81C52CA2
+</pre>
+<p><i>SHA-512/224</i> идентичен SHA-512, за исключением:
+</p>
+<ul><li>переменные <code>h0</code>—<code>h7</code> имеют другие начальные значения,</li>
+<li>итоговый хеш обрезается до левых 224 бит.</li></ul>
+<pre><span style="color:green;"><i>Начальные значения переменных <code>h0</code>—<code>h7</code> в SHA-512/224</i>:</span>
+h0&#160;:= 8C3D37C819544DA2
+h1&#160;:= 73E1996689DCD4D6
+h2&#160;:= 1DFAB7AE32FF9C82
+h3&#160;:= 679DD514582F9FCF
+h4&#160;:= 0F6D2B697BD44DA8
+h5&#160;:= 77E36F7304C48942
+h6&#160;:= 3F9D85A86A1D36C8
+h7&#160;:= 1112E6AD91D692A1
+</pre>
+<h2><span id=".D0.9F.D1.80.D0.B8.D0.BC.D0.B5.D1.80.D1.8B"></span><span class="mw-headline" id="Примеры">Примеры</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SHA-2&amp;veaction=edit&amp;section=7" class="mw-editsection-visualeditor" title="Редактировать раздел «Примеры»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=SHA-2&amp;action=edit&amp;section=7" title="Редактировать раздел «Примеры»">править код</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Ниже приведены примеры хешей <i>SHA-2</i>. Для всех сообщений подразумевается использование кодировки <a href="/wiki/ASCII" title="ASCII">ASCII</a>.
+</p>
+<pre>SHA-224("<a href="/wiki/The_quick_brown_fox_jumps_over_the_lazy_dog" title="The quick brown fox jumps over the lazy dog">The quick brown fox jumps over the lazy dog</a>") 
+ = 730E109B D7A8A32B 1CB9D9A0 9AA2325D 2430587D DBC0C38B AD911525
+</pre>
+<pre>SHA-256("The quick brown fox jumps over the lazy dog") 
+ = D7A8FBB3 07D78094 69CA9ABC B0082E4F 8D5651E4 6D3CDB76 2D02D0BF 37C9E592
+</pre>
+<pre>SHA-384("The quick brown fox jumps over the lazy dog") 
+ = CA737F10 14A48F4C 0B6DD43C B177B0AF D9E51693 67544C49 4011E331 7DBF9A50
+   9CB1E5DC 1E85A941 BBEE3D7F 2AFBC9B1
+</pre>
+<pre>SHA-512("The quick brown fox jumps over the lazy dog") 
+ = 07E547D9 586F6A73 F73FBAC0 435ED769 51218FB7 D0C8D788 A309D785 436BBB64
+   2E93A252 A954F239 12547D1E 8A3B5ED6 E1BFD709 7821233F A0538F3D B854FEE6
+</pre>
+<pre>SHA-512/256("The quick brown fox jumps over the lazy dog") 
+ = DD9D67B3 71519C33 9ED8DBD2 5AF90E97 6A1EEEFD 4AD3D889 005E532F C5BEF04D
+</pre>
+<pre>SHA-512/224("The quick brown fox jumps over the lazy dog") 
+ = 944CD284 7FB54558 D4775DB0 485A5000 3111C8E5 DAA63FE7 22C6AA37
+</pre>
+<p>Малейшее изменение сообщения в подавляющем большинстве случаев приводит к совершенно другому хешу вследствие <a href="/wiki/%D0%9B%D0%B0%D0%B2%D0%B8%D0%BD%D0%BD%D1%8B%D0%B9_%D1%8D%D1%84%D1%84%D0%B5%D0%BA%D1%82" title="Лавинный эффект">лавинного эффекта</a>. К примеру, при изменении <code>dog</code> на <code>cog</code> получится:
+</p>
+<pre>SHA-256("The quick brown fox jumps over the lazy cog") 
+ = E4C4D8F3 BF76B692 DE791A17 3E053211 50F7A345 B46484FE 427F6ACC 7ECC81BE
+</pre>
+<h2><span id=".D0.9A.D1.80.D0.B8.D0.BF.D1.82.D0.BE.D0.B0.D0.BD.D0.B0.D0.BB.D0.B8.D0.B7"></span><span class="mw-headline" id="Криптоанализ">Криптоанализ</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SHA-2&amp;veaction=edit&amp;section=8" class="mw-editsection-visualeditor" title="Редактировать раздел «Криптоанализ»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=SHA-2&amp;action=edit&amp;section=8" title="Редактировать раздел «Криптоанализ»">править код</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>В <a href="/wiki/2003" class="mw-redirect" title="2003">2003 году</a> Гилберт и Хандшух провели исследование <i>SHA-2</i>, но не нашли каких-либо уязвимостей.<sup id="cite_ref-_8f939a554c13c6c5_8-0" class="reference"><a href="#cite_note-_8f939a554c13c6c5-8">&#91;8&#93;</a></sup> Однако в марте 2008 года индийские исследователи Сомитра Кумар Санадия и Палаш Саркар опубликовали найденные ими коллизии для 22 итераций <i>SHA-256</i> и <i>SHA-512</i>.<sup id="cite_ref-9" class="reference"><a href="#cite_note-9">&#91;9&#93;</a></sup> В сентябре того же года они представили метод конструирования коллизий для усечённых вариантов <i>SHA-2</i> (21 итерация).<sup id="cite_ref-10" class="reference"><a href="#cite_note-10">&#91;10&#93;</a></sup><sup id="cite_ref-11" class="reference"><a href="#cite_note-11">&#91;11&#93;</a></sup> Позднее были найдены методы конструирования коллизий для 31 итерации <i>SHA-256</i><sup id="cite_ref-_6a534181c716985f_12-0" class="reference"><a href="#cite_note-_6a534181c716985f-12">&#91;12&#93;</a></sup>  и для 27 итераций <i>SHA-512</i><sup id="cite_ref-13" class="reference"><a href="#cite_note-13">&#91;13&#93;</a></sup>.
+</p><p><a href="/wiki/%D0%9A%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7" title="Криптоанализ">Криптоанализ</a> хеш-функции подразумевает исследование устойчивости алгоритма по отношению, по меньшей мере, к следующим видам атак:
+</p>
+<ul><li>нахождению <a href="/wiki/%D0%9A%D0%BE%D0%BB%D0%BB%D0%B8%D0%B7%D0%B8%D1%8F_%D1%85%D0%B5%D1%88-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8" title="Коллизия хеш-функции">коллизий</a>, то есть разных сообщений с одинаковым хешем,</li>
+<li>нахождению <a href="/wiki/%D0%9F%D1%80%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D0%B7" class="mw-redirect" title="Прообраз">прообраза</a>, то есть неизвестного сообщения по его хешу.</li></ul>
+<p>От устойчивости хеш-функции к нахождению коллизий зависит безопасность электронной цифровой подписи с использованием данного хеш-алгоритма. От устойчивости к нахождению прообраза зависит безопасность хранения хешей паролей для целей <a href="/wiki/%D0%90%D1%83%D1%82%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F" title="Аутентификация">аутентификации</a>.
+</p><p>Ввиду алгоритмической схожести <i>SHA-2</i> с <i>SHA-1</i> и наличия у последней потенциальных уязвимостей принято решение, что SHA-3 будет базироваться на совершенно ином алгоритме.<sup id="cite_ref-14" class="reference"><a href="#cite_note-14">&#91;14&#93;</a></sup><sup id="cite_ref-15" class="reference"><a href="#cite_note-15">&#91;15&#93;</a></sup> 2 октября 2012 года NIST утвердил в качестве SHA-3 алгоритм <a href="/wiki/Keccak" class="mw-redirect" title="Keccak">Keccak</a>.
+</p>
+<h2><span id=".D0.9F.D1.80.D0.B8.D0.BC.D0.B5.D0.BD.D0.B5.D0.BD.D0.B8.D0.B5_.D0.B8_.D1.81.D0.B5.D1.80.D1.82.D0.B8.D1.84.D0.B8.D0.BA.D0.B0.D1.86.D0.B8.D1.8F"></span><span class="mw-headline" id="Применение_и_сертификация">Применение и сертификация</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SHA-2&amp;veaction=edit&amp;section=9" class="mw-editsection-visualeditor" title="Редактировать раздел «Применение и сертификация»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=SHA-2&amp;action=edit&amp;section=9" title="Редактировать раздел «Применение и сертификация»">править код</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><i>См. также <a href="/wiki/%D0%A5%D0%B5%D1%88%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5#Применение_хеширования" class="mw-redirect" title="Хеширование">Применение хеширования</a></i>
+</p><p><i>SHA-224</i>, <i>SHA-256</i>, <i>SHA-384</i>, <i>SHA-512</i>, <i>SHA-512/256</i> и <i>SHA-512/224</i> законом США допускаются к использованию в некоторых правительственных приложениях, включая использование в рамках других криптографических алгоритмов и протоколов, для защиты информации, не имеющей грифа секретности. Стандарт также допускает использование <i>SHA-2</i> частными и коммерческими организациями.<sup id="cite_ref-16" class="reference"><a href="#cite_note-16">&#91;16&#93;</a></sup>
+</p><p>Хеш-функции <i>SHA-2</i> используются для проверки целостности данных и в различных криптографических схемах. На <a href="/wiki/2008" class="mw-redirect" title="2008">2008 год</a> семейство хеш-функций <i>SHA-2</i> не имеет такого широкого распространения, как <i><a href="/wiki/MD5" title="MD5">MD5</a></i> и <i><a href="/wiki/SHA-1" title="SHA-1">SHA-1</a></i><sup id="cite_ref-17" class="reference"><a href="#cite_note-17">&#91;17&#93;</a></sup>, несмотря на обнаруженные у последних недостатки.
+</p><p>Некоторые примеры применения <i>SHA-2</i> указаны в таблице:
+</p>
+<table class="standard">
+<tbody><tr>
+<th>Область применения
+</th>
+<th>Детали
+</th></tr>
+<tr>
+<td><a href="/wiki/S/MIME" title="S/MIME">S/MIME</a>
+</td>
+<td><i>SHA-224</i>, <i>SHA-256</i>, <i>SHA-384</i> или <i>SHA-512</i> дайджесты сообщений<sup id="cite_ref-18" class="reference"><a href="#cite_note-18">&#91;18&#93;</a></sup>
+</td></tr>
+<tr>
+<td><a href="/wiki/OpenLDAP" title="OpenLDAP">OpenLDAP</a>
+</td>
+<td><i>SHA-256</i>, <i>SHA-384</i> или <i>SHA-512</i> хеши <a href="/wiki/%D0%9F%D0%B0%D1%80%D0%BE%D0%BB%D1%8C" title="Пароль">паролей</a><sup id="cite_ref-19" class="reference"><a href="#cite_note-19">&#91;19&#93;</a></sup>
+</td></tr>
+<tr>
+<td><a href="/wiki/DNSSEC" title="DNSSEC">DNSSEC</a>
+</td>
+<td><i>SHA-256</i> дайджесты <i>DNSKEY</i> в протоколе <i>DNSSEC</i><sup id="cite_ref-20" class="reference"><a href="#cite_note-20">&#91;20&#93;</a></sup>
+</td></tr>
+<tr>
+<td><a href="/wiki/X.509" title="X.509">X.509</a>
+</td>
+<td><i>SHA-224</i>, <i>SHA-256</i>, <i>SHA-384</i> и <i>SHA-512</i> используются для создания <a href="/wiki/%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F_%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%B0%D1%8F_%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D1%8C" class="mw-redirect" title="Электронная цифровая подпись">электронной цифровой подписи</a> сертификата<sup id="cite_ref-21" class="reference"><a href="#cite_note-21">&#91;21&#93;</a></sup>
+</td></tr>
+<tr>
+<td><a href="/wiki/PGP" title="PGP">PGP</a>
+</td>
+<td><i>SHA-256</i>, <i>SHA-384</i>, <i>SHA-512</i> используются для создания электронной цифровой подписи<sup id="cite_ref-22" class="reference"><a href="#cite_note-22">&#91;22&#93;</a></sup>
+</td></tr>
+<tr>
+<td><a href="/wiki/IPSec" class="mw-redirect" title="IPSec">IPSec</a>
+</td>
+<td>Некоторые реализации поддерживают <i>SHA-256</i> в протоколах <i><a href="/wiki/Encapsulating_Security_Payload" class="mw-redirect" title="Encapsulating Security Payload">ESP</a></i> и <i><a href="/wiki/IKE" title="IKE">IKE</a></i><sup id="cite_ref-23" class="reference"><a href="#cite_note-23">&#91;23&#93;</a></sup>
+</td></tr>
+<tr>
+<td><a href="/wiki/DSA" title="DSA">DSA</a>
+</td>
+<td>Семейство <i>SHA-2</i> используется для создания электронной цифровой подписи<sup id="cite_ref-24" class="reference"><a href="#cite_note-24">&#91;24&#93;</a></sup>
+</td></tr>
+<tr>
+<td><a href="/wiki/SHACAL-2" class="mw-redirect" title="SHACAL-2">SHACAL-2</a>
+</td>
+<td>Блочный алгоритм шифрования <a href="/wiki/SHACAL-2" class="mw-redirect" title="SHACAL-2">SHACAL-2</a> построен на основе хеш-функции <i>SHA-256</i>
+</td></tr>
+<tr>
+<td><a href="/wiki/Bitcoin" class="mw-redirect" title="Bitcoin">Bitcoin</a>
+</td>
+<td>Эмиссия криптовалюты <a href="/wiki/Bitcoin" class="mw-redirect" title="Bitcoin">Bitcoin</a> осуществляется посредством поиска строк, <i>SHA-256</i>-хеш которых имеет заданную структуру
+</td></tr></tbody></table>
+<p>Как показали исследования<sup id="cite_ref-25" class="reference"><a href="#cite_note-25">&#91;25&#93;</a></sup>, алгоритмы <i>SHA-2</i> работают в 2—3 раза медленнее других популярных хеш-алгоритмов <a href="/wiki/MD5" title="MD5">MD5</a>, <a href="/wiki/SHA-1" title="SHA-1">SHA-1</a>, <a href="/wiki/Tiger_(%D1%85%D0%B5%D1%88-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F)" title="Tiger (хеш-функция)">Tiger</a> и <a href="/wiki/RIPEMD-160" title="RIPEMD-160">RIPEMD-160</a>.
+</p>
+<h3><span id=".D0.A1.D0.B5.D1.80.D1.82.D0.B8.D1.84.D0.B8.D0.BA.D0.B0.D1.86.D0.B8.D1.8F"></span><span class="mw-headline" id="Сертификация">Сертификация</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SHA-2&amp;veaction=edit&amp;section=10" class="mw-editsection-visualeditor" title="Редактировать раздел «Сертификация»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=SHA-2&amp;action=edit&amp;section=10" title="Редактировать раздел «Сертификация»">править код</a><span class="mw-editsection-bracket">]</span></span></h3>
+<table class="plainlinks metadata ambox ambox-content" role="presentation"><tbody><tr><td class="mbox-image"><div style="width:52px"><a href="/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Ambox_globe_content.svg" class="image" title="Глобализировать"><img alt="(!)" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Ambox_globe_content.svg/48px-Ambox_globe_content.svg.png" decoding="async" width="48" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Ambox_globe_content.svg/73px-Ambox_globe_content.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Ambox_globe_content.svg/97px-Ambox_globe_content.svg.png 2x" data-file-width="350" data-file-height="290" /></a></div></td><td class="mbox-text"><div class="mbox-text-div"><b>Эта статья или раздел описывает ситуацию применительно лишь к одному региону&#160;(<a href="/wiki/%D0%A1%D0%A8%D0%90" class="mw-redirect" title="США">США</a>)</b>, возможно, нарушая при этом <a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%92%D0%B7%D0%B2%D0%B5%D1%88%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C_%D0%B8%D0%B7%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F" title="Википедия:Взвешенность изложения">правило о взвешенности изложения</a>.</div><div class="mbox-textsmall-div hide-when-compact" style="font-size:85%">Вы можете помочь Википедии, добавив информацию для других стран и регионов.</div></td></tr></tbody></table>
+<p>Реализации <i>SHA-2</i>, как и всех Федеральных стандартов обработки информации, могут быть сертифицированы для использования в некоторых приложениях на территории США. Сертификация происходит в рамках процедуры <span data-interwiki-lang="en" data-interwiki-article="Cryptographic Module Validation Program"><a href="/w/index.php?title=Cryptographic_Module_Validation_Program&amp;action=edit&amp;redlink=1" class="new" title="Cryptographic Module Validation Program (страница отсутствует)">Cryptographic Module Validation Program</a></span><span style="font-style:normal; font-weight:normal;"><sup class="noprint"><a href="https://en.wikipedia.org/wiki/Cryptographic_Module_Validation_Program" class="extiw" title="en:Cryptographic Module Validation Program"><span title="Cryptographic Module Validation Program — версия статьи «Cryptographic Module Validation Program» на английском языке">[en]</span></a></sup></span>, которая проводится Национальным институтом стандартов и технологий США совместно с канадским Бюро безопасности связи.
+</p><p>На <a href="/wiki/5_%D0%BD%D0%BE%D1%8F%D0%B1%D1%80%D1%8F" title="5 ноября">5 ноября</a> 2008 года было сертифицировано более 250 реализаций <i>SHA-2</i>, четыре из которых могли оперировать сообщениями с длиной в битах, не кратной восьми.<sup id="cite_ref-26" class="reference"><a href="#cite_note-26">&#91;26&#93;</a></sup>
+</p><p>Сертифицировано <a href="/wiki/FIPS" class="mw-redirect" title="FIPS">FIPS</a> PUB 180-4, <a href="/wiki/CRYPTREC" title="CRYPTREC">CRYPTREC</a> и <a href="/wiki/NESSIE" title="NESSIE">NESSIE</a>.
+</p>
+<h2><span id=".D0.A1.D0.BC._.D1.82.D0.B0.D0.BA.D0.B6.D0.B5"></span><span class="mw-headline" id="См._также">См. также</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SHA-2&amp;veaction=edit&amp;section=11" class="mw-editsection-visualeditor" title="Редактировать раздел «См. также»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=SHA-2&amp;action=edit&amp;section=11" title="Редактировать раздел «См. также»">править код</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><i><a href="/wiki/MD5" title="MD5">MD5</a></i></li>
+<li><i><a href="/wiki/SHA-1" title="SHA-1">SHA-1</a></i></li>
+<li><a href="/wiki/%D0%9A%D0%BE%D0%BB%D0%BB%D0%B8%D0%B7%D0%B8%D1%8F_%D1%85%D0%B5%D1%88-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8" title="Коллизия хеш-функции">Коллизия хеш-функции</a></li>
+<li><a href="/wiki/%D0%A4%D0%B5%D0%B4%D0%B5%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5_%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D1%8B_%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8_%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%B8" title="Федеральные стандарты обработки информации">Федеральные стандарты обработки информации</a></li>
+<li><a href="/wiki/%D0%A5%D0%B5%D1%88%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" class="mw-redirect" title="Хеширование">Хеширование</a></li></ul>
+<h2><span id=".D0.9F.D1.80.D0.B8.D0.BC.D0.B5.D1.87.D0.B0.D0.BD.D0.B8.D1.8F"></span><span class="mw-headline" id="Примечания">Примечания</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SHA-2&amp;veaction=edit&amp;section=12" class="mw-editsection-visualeditor" title="Редактировать раздел «Примечания»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=SHA-2&amp;action=edit&amp;section=12" title="Редактировать раздел «Примечания»">править код</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns" style="list-style-type: decimal;">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><span class="citation"><span class="citation"><span lang="en"><a rel="nofollow" class="external text" href="http://csrc.nist.gov/publications/fips/fips180-2/fips180-2.pdf">FIPS PUB 180-2</a></span>&#160;<span class="ref-info" style="cursor:help;" title="на английском языке">(англ.)</span><span class="hidden-ref" style="display:none"></span>.&#160;— первоначальный вариант стандарта для SHA-2.&#32;<small>Дата обращения: 19 ноября 2008.</small>&#32;<small><a rel="nofollow" class="external text" href="https://www.webcitation.org/66GOBWCaL?url=http://csrc.nist.gov/publications/fips/fips180-2/fips180-2.pdf">Архивировано</a> 18&#160;марта 2012&#160;года.</small></span></span></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text"><span class="citation"><span class="citation"><span lang="en"><a rel="nofollow" class="external text" href="http://csrc.nist.gov/publications/fips/fips180-2/fips180-2withchangenotice.pdf">FIPS PUB 180-2 with change notice</a></span>&#160;<span class="ref-info" style="cursor:help;" title="на английском языке">(англ.)</span><span class="hidden-ref" style="display:none"></span>.&#160;— вариант стандарта с SHA-224.&#32;<small>Дата обращения: 19 ноября 2008.</small>&#32;<small><a rel="nofollow" class="external text" href="https://www.webcitation.org/66GOBwst5?url=http://csrc.nist.gov/publications/fips/fips180-2/fips180-2withchangenotice.pdf">Архивировано</a> 18&#160;марта 2012&#160;года.</small></span></span></span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><a href="#cite_ref-3">↑</a></span> <span class="reference-text"><span class="citation"><span class="citation"><span lang="en"><a rel="nofollow" class="external text" href="http://csrc.nist.gov/publications/fips/fips180-3/fips180-3_final.pdf">FIPS PUB 180-3</a></span>&#160;<span class="ref-info" style="cursor:help;" title="на английском языке">(англ.)</span><span class="hidden-ref" style="display:none"></span>.&#160;— редакция Secure Hash Standard от октября 2008 года.&#32;<small>Дата обращения: 19 ноября 2008.</small>&#32;<small><a rel="nofollow" class="external text" href="https://www.webcitation.org/66GOCOl1l?url=http://csrc.nist.gov/publications/fips/fips180-3/fips180-3_final.pdf">Архивировано</a> 18&#160;марта 2012&#160;года.</small></span></span></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><a href="#cite_ref-4">↑</a></span> <span class="reference-text"><span class="citation"><span class="citation"><span lang="en"><a rel="nofollow" class="external text" href="http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf">FIPS PUB 180-4</a></span>&#160;<span class="ref-info" style="cursor:help;" title="на английском языке">(англ.)</span><span class="hidden-ref" style="display:none"></span>&#160;<span class="ref-info">(недоступная ссылка)</span>.&#160;— редакция Secure Hash Standard от августа 2015 года.&#32;<small>Дата обращения: 28 августа 2015.</small>&#32;<small><a rel="nofollow" class="external text" href="https://web.archive.org/web/20161126003357/http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf">Архивировано</a> 26&#160;ноября 2016&#160;года.</small></span></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><a href="#cite_ref-5">↑</a></span> <span class="reference-text"><span class="citation"><span class="citation"><span lang="en"><a rel="nofollow" class="external text" href="http://www.google.com/patents/US6829355">US patent 6829355</a></span>&#160;<span class="ref-info" style="cursor:help;" title="на английском языке">(англ.)</span><span class="hidden-ref" style="display:none"></span>.&#160;— Device for and method of one-way cryptographic hashing.</span></span></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><a href="#cite_ref-6">↑</a></span> <span class="reference-text"><span class="citation"><a rel="nofollow" class="external text" href="https://datatracker.ietf.org/ipr/858/">Licensing Declaration for US patent 6829355.</a>&#160;<span class="ref-info" style="cursor:help;" title="на неопределённом языке">(неопр.)</span>.</span>&#160;<span class="ref-info" style="cursor:help;" title="на английском языке">(англ.)</span></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><a href="#cite_ref-7">↑</a></span> <span class="reference-text"><span class="citation"><span class="citation"><span lang="und"><a rel="nofollow" class="external text" href="http://www.cryptopp.com/benchmarks-amd64.html">"Crypto++ 5.6.0 Benchmarks". Retrieved 2013-06-13.</a></span><span class="hidden-ref" style="display:none"><b>&#160;<span class="ref-info" style="cursor:help;" title="на неопределённом языке">(неопр.)</span></b></span>.</span></span></span>
+</li>
+<li id="cite_note-_8f939a554c13c6c5-8"><span class="mw-cite-backlink"><a href="#cite_ref-_8f939a554c13c6c5_8-0">↑</a></span> <span class="reference-text"><span class="wikidata_cite citetype_Q13442814" data-entity-id="Q27882162"><i class="wef_low_priority_links"><a href="https://www.wikidata.org/wiki/Q27882148" class="extiw" title="d:Q27882148">Gilbert&#160;H.</a>, <a href="https://www.wikidata.org/wiki/Q27882149" class="extiw" title="d:Q27882149">Handschuh&#160;H.</a></i> <a href="https://www.wikidata.org/wiki/Q27882162" class="extiw" title="d:Q27882162">Security Analysis of SHA-256 and Sisters</a>&#160;<span class="ref-info" style="cursor:help;" title="на английском языке">(англ.)</span> // <i><a href="https://www.wikidata.org/wiki/Q27882158" class="extiw" title="d:Q27882158">Selected Areas in Cryptography</a></i>: <i>10th Annual International Workshop, SAC 2003, Ottawa, Canada, August 14-15, 2003. Revised Papers</i><span class="wef_low_priority_links"> / <a href="https://en.wikipedia.org/wiki/Mitsuru_Matsui" class="extiw" title="en:Mitsuru Matsui">M.&#160;Matsui</a>, <a href="https://www.wikidata.org/wiki/Q27882157" class="extiw" title="d:Q27882157">R.&#160;J.&#160;Zuccherato</a> — <a href="https://www.wikidata.org/wiki/Q21587985" class="extiw" title="d:Q21587985">Springer Berlin Heidelberg</a>, 2004. — P.&#160;175—193. — (<a href="https://en.wikipedia.org/wiki/Lecture_Notes_in_Computer_Science" class="extiw" title="en:Lecture Notes in Computer Science">Lecture Notes in Computer Science</a>; Vol.&#160;3006) — <a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%98%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8_%D0%BA%D0%BD%D0%B8%D0%B3/9783540213703" class="internal mw-magiclink-isbn">ISBN 978-3-540-21370-3</a> — ISSN <a rel="nofollow" class="external text" href="https://www.worldcat.org/issn/0302-9743">0302-9743</a>; <a rel="nofollow" class="external text" href="https://www.worldcat.org/issn/1611-3349">1611-3349</a> — <a rel="nofollow" class="external text" href="https://dx.doi.org/10.1007/978-3-540-24654-1_13">doi:10.1007/978-3-540-24654-1_13</a></span></span></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><a href="#cite_ref-9">↑</a></span> <span class="reference-text">Somitra Kumar Sanadhya, Palash Sarkar. <a rel="nofollow" class="external text" href="http://arxiv.org/abs/0803.1220">22-Step Collisions for SHA-2</a>&#160;<span class="ref-info" style="cursor:help;" title="на английском языке">(англ.)</span></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><a href="#cite_ref-10">↑</a></span> <span class="reference-text">Somitra Kumar Sanadhya, Palash Sarkar. <a rel="nofollow" class="external text" href="https://dx.doi.org/10.1007/978-3-540-85886-7_17">Deterministic Constructions of 21-Step Collisions for the SHA-2 Hash Family</a>&#160;<span class="ref-info" style="cursor:help;" title="на английском языке">(англ.)</span></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><a href="#cite_ref-11">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://isc08.twisc.org/slides/S5P4_Deterministic_Constructions_of_21-Step_Collisions_for_the_SHA-2_Hash_Family.pdf">Презентация «Deterministic Constructions of 21-Step Collisions for the SHA-2 Hash Family»</a> <a rel="nofollow" class="external text" href="http://web.archive.org/web/20100703115208/http://isc08.twisc.org/slides/S5P4_Deterministic_Constructions_of_21-Step_Collisions_for_the_SHA-2_Hash_Family.pdf">Архивная копия</a> от 3 июля 2010 на <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a>&#160;<span class="ref-info" style="cursor:help;" title="на английском языке">(англ.)</span></span>
+</li>
+<li id="cite_note-_6a534181c716985f-12"><span class="mw-cite-backlink"><a href="#cite_ref-_6a534181c716985f_12-0">↑</a></span> <span class="reference-text"><span class="wikidata_cite citetype_Q13442814" data-entity-id="Q27882243"><i class="wef_low_priority_links"><a href="https://www.wikidata.org/wiki/Q22036631" class="extiw" title="d:Q22036631">Mendel&#160;F.</a>, <a href="https://www.wikidata.org/wiki/Q22131844" class="extiw" title="d:Q22131844">Nad&#160;T.</a>, <a href="https://www.wikidata.org/wiki/Q22022507" class="extiw" title="d:Q22022507">Schläffer&#160;M.</a></i> <a rel="nofollow" class="external text" href="https://online.tugraz.at/tug_online/voe_main2.getvolltext?pCurrPk=69018">Improving Local Collisions: New Attacks on Reduced SHA-256</a>&#160;<span class="ref-info" style="cursor:help;" title="на английском языке">(англ.)</span> // <i><a href="https://www.wikidata.org/wiki/Q27882241" class="extiw" title="d:Q27882241">Advances in Cryptology – EUROCRYPT 2013</a></i>: <i>32nd Annual International Conference on the Theory and Applications of Cryptographic Techniques, Athens, Greece, May 26-30, 2013. Proceedings</i><span class="wef_low_priority_links"> / <a href="https://www.wikidata.org/wiki/Q28002950" class="extiw" title="d:Q28002950">T.&#160;Johansson</a>, <a href="https://www.wikidata.org/wiki/Q21683980" class="extiw" title="d:Q21683980">P.&#160;Q.&#160;Nguyen</a> — <a href="https://www.wikidata.org/wiki/Q21587985" class="extiw" title="d:Q21587985">Springer Berlin Heidelberg</a>, 2013. — P.&#160;262—278. — 736&#160;p. — <a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%98%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8_%D0%BA%D0%BD%D0%B8%D0%B3/9783642383472" class="internal mw-magiclink-isbn">ISBN 978-3-642-38347-2</a> — <a rel="nofollow" class="external text" href="https://dx.doi.org/10.1007/978-3-642-38348-9_16">doi:10.1007/978-3-642-38348-9_16</a></span></span></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><a href="#cite_ref-13">↑</a></span> <span class="reference-text"><span class="citation"><i>Christoph Dobraunig, Maria Eichlseder, and Florian Mendel.</i>&#32;<a rel="nofollow" class="external text" href="https://eprint.iacr.org/2016/374.pdf">Analysis of SHA-512/224 and SHA-512/256</a>&#160;<span class="ref-info" style="cursor:help;" title="на неопределённом языке">(неопр.)</span>.&#160;— 2016.</span></span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><a href="#cite_ref-14">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.schneier.com/blog/archives/2005/11/nist_hash_works_4.html">Schneier on Security: NIST Hash Workshop Liveblogging (5)</a>&#160;<span class="ref-info" style="cursor:help;" title="на английском языке">(англ.)</span></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><a href="#cite_ref-15">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.heise-online.co.uk/security/Hash-cracked--/features/75686/2">Hash cracked&#160;— heise Security</a>&#160;<span class="ref-info" style="cursor:help;" title="на английском языке">(англ.)</span></span>
+</li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><a href="#cite_ref-16">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://csrc.nist.gov/publications/fips/fips180-2/fips180-2withchangenotice.pdf"><i>FIPS 180-2: Secure Hash Standard (SHS): 6. Applicability</i></a>&#160;<span class="ref-info" style="cursor:help;" title="на английском языке">(англ.)</span></span>
+</li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><a href="#cite_ref-17">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.google.com/search?q=SHA-1">SHA-1</a>, <a rel="nofollow" class="external text" href="http://www.google.com/search?q=SHA-256">SHA-256</a> в результатах поисковой системы <a href="/wiki/Google_(%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%BE%D0%B2%D0%B0%D1%8F_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0)" title="Google (поисковая система)">Google</a></span>
+</li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><a href="#cite_ref-18">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://tools.ietf.org/html/draft-ietf-smime-sha2-08">draft-ietf-smime-sha2-08</a>&#160;<span class="ref-info" style="cursor:help;" title="на английском языке">(англ.)</span>: Using SHA2 Algorithms with Cryptographic Message Syntax</span>
+</li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><a href="#cite_ref-19">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.openldap.org/its/index.cgi/Contrib?id=5660">SHA-2 hash support in OpenLDAP</a>&#160;<span class="ref-info" style="cursor:help;" title="на английском языке">(англ.)</span></span>
+</li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><a href="#cite_ref-20">↑</a></span> <span class="reference-text"><a class="external mw-magiclink-rfc" rel="nofollow" href="https://tools.ietf.org/html/rfc4509">RFC 4509</a>: Use of <i>SHA-256</i> in DNSSEC Delegation Signer (DS) Resource Records (RRs)</span>
+</li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><a href="#cite_ref-21">↑</a></span> <span class="reference-text"><a class="external mw-magiclink-rfc" rel="nofollow" href="https://tools.ietf.org/html/rfc4055">RFC 4055</a>: Additional Algorithms and Identifiers for RSA Cryptography for use in the Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile</span>
+</li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><a href="#cite_ref-22">↑</a></span> <span class="reference-text"><a class="external mw-magiclink-rfc" rel="nofollow" href="https://tools.ietf.org/html/rfc4880">RFC 4880</a>: OpenPGP Message Format</span>
+</li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><a href="#cite_ref-23">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://technet.microsoft.com/en-us/library/cc749132.aspx">Overview of Windows Vista Service Pack 1: New Standards</a>&#160;<span class="ref-info" style="cursor:help;" title="на английском языке">(англ.)</span></span>
+</li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><a href="#cite_ref-24">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://csrc.nist.gov/publications/fips/fips186-2/fips186-2-change1.pdf">FIPS-186-2</a> <small><a rel="nofollow" class="external text" href="https://web.archive.org/web/20090518185707/http://csrc.nist.gov/publications/fips/fips186-2/fips186-2-change1.pdf">Архивировано</a> 18&#160;мая 2009&#160;года.</small>: Digital Signature Standard (DSS)]</span>
+</li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><a href="#cite_ref-25">↑</a></span> <span class="reference-text">Speed Comparison of Popular Crypto Algorithms <a rel="nofollow" class="external autonumber" href="http://www.cryptopp.com/benchmarks.html">[1]</a>&#160;<span class="ref-info" style="cursor:help;" title="на английском языке">(англ.)</span></span>
+</li>
+<li id="cite_note-26"><span class="mw-cite-backlink"><a href="#cite_ref-26">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://csrc.nist.gov/groups/STM/cavp/documents/shs/shaval.htm">SHS Validation List</a>&#160;<span class="ref-info" style="cursor:help;" title="на английском языке">(англ.)</span></span>
+</li>
+</ol></div></div>
+<h2><span id=".D0.9B.D0.B8.D1.82.D0.B5.D1.80.D0.B0.D1.82.D1.83.D1.80.D0.B0"></span><span class="mw-headline" id="Литература">Литература</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SHA-2&amp;veaction=edit&amp;section=13" class="mw-editsection-visualeditor" title="Редактировать раздел «Литература»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=SHA-2&amp;action=edit&amp;section=13" title="Редактировать раздел «Литература»">править код</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><span class="citation no-wikidata" data-wikidata-property-id="P1343"><i>Лапонина О.Р.</i>&#32;<a rel="nofollow" class="external text" href="http://www.intuit.ru/department/security/networksec/9/2.html">Криптографические основы безопасности</a>.&#160;— <abbr title="Москва">М.</abbr>: Интернет-университет информационных технологий - ИНТУИТ.ру, 2004.&#160;— С.&#160;320.&#160;— <a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%98%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8_%D0%BA%D0%BD%D0%B8%D0%B3/5955600020" class="internal mw-magiclink-isbn">ISBN 5-9556-00020</a>-5.</span></li>
+<li><span class="citation"><i><a href="/wiki/%D0%A4%D0%B5%D1%80%D0%B3%D1%8E%D1%81%D0%BE%D0%BD,_%D0%9D%D0%B8%D0%BB%D1%8C%D1%81" title="Фергюсон, Нильс">Нильс Фергюсон</a>, <a href="/wiki/%D0%A8%D0%BD%D0%B0%D0%B9%D0%B5%D1%80,_%D0%91%D1%80%D1%8E%D1%81" title="Шнайер, Брюс">Брюс Шнайер</a>.</i>&#32;Практическая криптография&#160;= Practical Cryptography: Designing and Implementing Secure Cryptographic Systems.&#160;— <abbr title="Москва">М.</abbr>&#160;: Диалектика, 2004.&#160;— 432&#160;с.&#160;— <span class="nowrap">3000 экз.</span>&#160;— <a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%98%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8_%D0%BA%D0%BD%D0%B8%D0%B3/5845907330" class="internal mw-magiclink-isbn">ISBN 5-8459-0733-0</a>, <a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%98%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8_%D0%BA%D0%BD%D0%B8%D0%B3/0471223573" class="internal mw-magiclink-isbn">ISBN 0-4712-2357-3</a>.</span></li>
+<li><a rel="nofollow" class="external text" href="https://online.tu-graz.ac.at/tug_online/voe_main2.getvolltext?pDocumentNr=85215">Анализ усечённого варианта SHA-256</a>&#160;<span class="ref-info">(недоступная ссылка)</span>&#160;<span class="ref-info" style="cursor:help;" title="на английском языке">(англ.)</span></li>
+<li><a rel="nofollow" class="external text" href="https://dx.doi.org/10.1007/978-3-540-71039-4_1">Коллизии усечённого варианта SHA-256</a>&#160;<span class="ref-info" style="cursor:help;" title="на английском языке">(англ.)</span></li>
+<li><a rel="nofollow" class="external text" href="https://dx.doi.org/10.1007/978-3-540-70500-0_19">Нелинейные атаки на усечённые варианты хеш-функций SHA-2</a>&#160;<span class="ref-info" style="cursor:help;" title="на английском языке">(англ.)</span></li>
+<li><a rel="nofollow" class="external text" href="https://dx.doi.org/10.1007/978-3-540-85886-7_17">Детерминированное конструирование коллизий для семейства хешей SHA-2 с 21 итерацией</a>&#160;<span class="ref-info" style="cursor:help;" title="на английском языке">(англ.)</span></li></ul>
+<h2><span id=".D0.A1.D1.81.D1.8B.D0.BB.D0.BA.D0.B8"></span><span class="mw-headline" id="Ссылки">Ссылки</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=SHA-2&amp;veaction=edit&amp;section=14" class="mw-editsection-visualeditor" title="Редактировать раздел «Ссылки»">править</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=SHA-2&amp;action=edit&amp;section=14" title="Редактировать раздел «Ссылки»">править код</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a rel="nofollow" class="external text" href="http://csrc.nist.gov/publications/fips/fips180-3/fips180-3_final.pdf">FIPS 180-3</a>: Secure Hash Standard (SHS)</li>
+<li><a class="external mw-magiclink-rfc" rel="nofollow" href="https://tools.ietf.org/html/rfc3874">RFC 3874</a>: A 224-bit One-way Hash Function: SHA-224</li>
+<li><a class="external mw-magiclink-rfc" rel="nofollow" href="https://tools.ietf.org/html/rfc4634">RFC 4634</a>: US Secure Hash Algorithms (SHA and HMAC-SHA)</li></ul>
+<div role="navigation" class="navbox" aria-labelledby="Хеш-функции" data-name="Хеш-алгоритмы" style="padding:3px"><table class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="colgroup" class="navbox-title" colspan="2"><span class="navbox-gear" style="float:left;text-align:left;width:5em;margin-right:0.5em"><a href="/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD:%D0%A5%D0%B5%D1%88-%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B" title="Просмотр этого шаблона"><img alt="⛭" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Wikipedia_interwiki_section_gear_icon.svg/14px-Wikipedia_interwiki_section_gear_icon.svg.png" decoding="async" width="14" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Wikipedia_interwiki_section_gear_icon.svg/21px-Wikipedia_interwiki_section_gear_icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Wikipedia_interwiki_section_gear_icon.svg/28px-Wikipedia_interwiki_section_gear_icon.svg.png 2x" data-file-width="14" data-file-height="14" /></a></span><div id="Хеш-функции" style="font-size:114%;margin:0 5em"><a href="/wiki/%D0%A5%D0%B5%D1%88-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F" title="Хеш-функция">Хеш-функции</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1px">Общего назначения</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Adler-32" title="Adler-32">Adler-32</a></li>
+<li><a href="/wiki/%D0%A6%D0%B8%D0%BA%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D0%B8%D0%B7%D0%B1%D1%8B%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D0%B4" title="Циклический избыточный код">CRC</a></li>
+<li><a href="/wiki/%D0%9A%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%81%D1%83%D0%BC%D0%BC%D0%B0_%D0%A4%D0%BB%D0%B5%D1%82%D1%87%D0%B5%D1%80%D0%B0" title="Контрольная сумма Флетчера">Контрольная сумма Флетчера</a></li>
+<li><a href="/wiki/FNV" title="FNV">FNV</a></li>
+<li><a href="/wiki/MurmurHash2" title="MurmurHash2">MurmurHash2</a></li>
+<li><a href="/wiki/MurmurHash2" title="MurmurHash2">MurmurHash2A</a></li>
+<li><a href="/wiki/MurmurHash2" title="MurmurHash2">MurmurHash3</a></li>
+<li><a href="/wiki/PJW-32" title="PJW-32">PJW-32</a></li>
+<li><a href="/wiki/TTH" class="mw-redirect" title="TTH">TTH</a>-<a href="/wiki/%D0%94%D0%B5%D1%80%D0%B5%D0%B2%D0%BE_%D1%85%D0%B5%D1%88%D0%B5%D0%B9" title="Дерево хешей">Дерево хешей</a></li>
+<li><a href="/wiki/%D0%A5%D0%B5%D1%88-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F_%D0%94%D0%B6%D0%B5%D0%BD%D0%BA%D0%B8%D0%BD%D1%81%D0%B0" title="Хеш-функция Дженкинса">Jenkins hash</a></li>
+<li><a href="/wiki/%D0%A5%D0%B5%D1%88-%D1%81%D1%83%D0%BC%D0%BC%D0%B0" title="Хеш-сумма">Хеш-сумма</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1px"><a href="/wiki/%D0%9A%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D1%85%D0%B5%D1%88-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F" title="Криптографическая хеш-функция">Криптографические</a></th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%D0%A1%D1%82%D1%80%D0%B8%D0%B1%D0%BE%D0%B3_(%D1%85%D0%B5%D1%88-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F)" title="Стрибог (хеш-функция)">Стрибог</a></li>
+<li><a href="/wiki/%D0%93%D0%9E%D0%A1%D0%A2_%D0%A0_34.11-94" title="ГОСТ Р 34.11-94">ГОСТ Р 34.11-94</a></li>
+<li><a href="/wiki/BelT" title="BelT">BelT</a></li>
+<li><a href="/wiki/BLAKE_(%D1%85%D0%B5%D1%88-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F)" title="BLAKE (хеш-функция)">BLAKE</a></li>
+<li><a href="/wiki/BMW_Hash_function" title="BMW Hash function">BMW</a></li>
+<li><a href="/wiki/CubeHash" title="CubeHash">CubeHash</a></li>
+<li><a href="/wiki/ECHO" title="ECHO">ECHO</a></li>
+<li><a href="/wiki/EDonkey2000_(%D1%81%D0%B5%D1%82%D1%8C)#Хеш-алгоритм_ed2k" title="EDonkey2000 (сеть)">Edonkey2k</a></li>
+<li><a href="/wiki/Fast_Syndrome_Based_Hash" title="Fast Syndrome Based Hash">FSB</a></li>
+<li><a href="/wiki/Fugue_(%D1%85%D0%B5%D1%88-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F)" title="Fugue (хеш-функция)">Fugue</a></li>
+<li><a href="/wiki/Gr%C3%B8stl" title="Grøstl">Grøstl</a></li>
+<li><a href="/wiki/HAVAL" title="HAVAL">HAVAL</a></li>
+<li><a href="/wiki/Hamsi" title="Hamsi">Hamsi</a></li>
+<li><a href="/wiki/JH" title="JH">JH</a></li>
+<li><a href="/wiki/Kupyna" title="Kupyna">Kupyna</a></li>
+<li><a href="/wiki/LM-%D1%85%D0%B5%D1%88" title="LM-хеш">LM-хеш</a></li>
+<li><a href="/wiki/Luffa_(%D1%85%D0%B5%D1%88-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F)" title="Luffa (хеш-функция)">Luffa</a></li>
+<li><a href="/wiki/MD2" title="MD2">MD2</a></li>
+<li><a href="/wiki/MD4" title="MD4">MD4</a></li>
+<li><a href="/wiki/MD5" title="MD5">MD5</a></li>
+<li><a href="/wiki/MD6" title="MD6">MD6</a></li>
+<li><a href="/wiki/N-Hash" title="N-Hash">N-Hash</a></li>
+<li><a href="/wiki/RIPEMD-128" title="RIPEMD-128">RIPEMD-128</a></li>
+<li><a href="/wiki/RIPEMD-160" title="RIPEMD-160">RIPEMD-160</a></li>
+<li><a href="/wiki/RIPEMD-256" title="RIPEMD-256">RIPEMD-256</a></li>
+<li><a href="/wiki/RIPEMD-320" title="RIPEMD-320">RIPEMD-320</a></li>
+<li><a href="/wiki/SHA-1" title="SHA-1">SHA-1</a></li>
+<li><a class="mw-selflink selflink">SHA-2</a></li>
+<li><a href="/wiki/SHA-3" title="SHA-3">Keccak (SHA-3)</a></li>
+<li><a href="/wiki/SHABAL" title="SHABAL">SHABAL</a></li>
+<li><a href="/wiki/SHAvite-3" title="SHAvite-3">SHAvite-3</a></li>
+<li><a href="/wiki/SIMD_(%D1%85%D0%B5%D1%88-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F)" title="SIMD (хеш-функция)">SIMD</a></li>
+<li><a href="/wiki/SWIFFT" title="SWIFFT">SWIFFT</a></li>
+<li><a href="/wiki/Skein" title="Skein">Skein</a></li>
+<li><a href="/wiki/Snefru" title="Snefru">Snefru</a></li>
+<li><a href="/wiki/Tiger_(%D1%85%D0%B5%D1%88-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F)" title="Tiger (хеш-функция)">Tiger</a></li>
+<li><a href="/wiki/Whirlpool_(%D1%85%D0%B5%D1%88-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F)" title="Whirlpool (хеш-функция)">Whirlpool</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1px"><a href="/wiki/%D0%A4%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F_%D1%84%D0%BE%D1%80%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F_%D0%BA%D0%BB%D1%8E%D1%87%D0%B0" title="Функция формирования ключа">Функции формирования ключа</a></th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Bcrypt" title="Bcrypt">bcrypt</a></li>
+<li><a href="/wiki/PBKDF2" title="PBKDF2">PBKDF2</a></li>
+<li><a href="/wiki/Scrypt" title="Scrypt">scrypt</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1px"><a href="/wiki/%D0%9A%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE" title="Контрольное число">Контрольное число</a> (<a href="/wiki/%D0%9A%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE#Достоинства_и_недостатки" title="Контрольное число">сравнение</a>)</th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%D0%9A%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%81%D1%83%D0%BC%D0%BC%D0%B0" title="Контрольная сумма">Контрольная сумма</a></li>
+<li><a href="/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC_%D0%92%D0%B5%D1%80%D1%85%D1%83%D1%84%D1%84%D0%B0" title="Алгоритм Верхуффа">Алгоритм Верхуффа</a></li>
+<li><a href="/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC_%D0%9B%D1%83%D0%BD%D0%B0" title="Алгоритм Луна">Алгоритм Луна</a></li>
+<li><a href="/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC_%D0%94%D0%B0%D0%BC%D0%BC%D0%B0" title="Алгоритм Дамма">Алгоритм Дамма</a></li>
+<li><a href="/wiki/%D0%9A%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE#Номера_на_товарах:_штрих-код_разных_типов" title="Контрольное число"> Штрих-код</a></li>
+<li><a href="/wiki/%D0%9A%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE#Номера_банковских_счетов" title="Контрольное число"> Банковских счетов</a></li>
+<li><a href="/wiki/%D0%9A%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE#Номера_банковских_карт" title="Контрольное число"> Банковских карт</a></li>
+<li><a href="/wiki/%D0%9A%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE#Международный_идентификационный_код_ценной_бумаги_(ISIN)" title="Контрольное число"> ISIN</a></li>
+<li><a href="/wiki/%D0%9A%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE#Страховой_номер_индивидуального_лицевого_счёта_(Россия)" title="Контрольное число"> СНИЛС</a></li>
+<li><a href="/wiki/%D0%9A%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE#Номер_ОКПО" title="Контрольное число"> ОКПО</a></li>
+<li><a href="/wiki/%D0%9A%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE#Номера_ИНН" title="Контрольное число"> ИНН</a></li>
+<li><a href="/wiki/%D0%9A%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE#Номер_ОКАТО" title="Контрольное число"> ОКАТО</a></li>
+<li><a href="/wiki/%D0%9A%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE#10-значный_ISBN" title="Контрольное число"> ISBN</a></li>
+<li><a href="/wiki/%D0%9A%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE#Номера_ОГРН_и_ОГРНИП" title="Контрольное число"> ОГРН и ОГРНИП</a></li>
+<li><a href="/wiki/%D0%9A%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE#Идентификационный_номер_транспортного_средства_(VIN)" title="Контрольное число"> VIN</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1px">Применение хешей</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/%D0%9A%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE#Достоинства_и_недостатки" title="Контрольное число">Сравнение контрольных чисел</a></li>
+<li><a href="/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD:%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB%D1%8B_%D0%B0%D1%83%D1%82%D0%B5%D0%BD%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8_%D0%B8_%D0%BE%D0%B1%D0%BC%D0%B5%D0%BD%D0%B0_%D0%BA%D0%BB%D1%8E%D1%87%D0%B0%D0%BC%D0%B8" title="Шаблон:Протоколы аутентификации и обмена ключами"> Протоколы аутентификации</a></li>
+<li><a href="/wiki/%D0%A1%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5_%D1%85%D0%B0%D1%80%D0%B0%D0%BA%D1%82%D0%B5%D1%80%D0%B8%D1%81%D1%82%D0%B8%D0%BA_%D1%88%D1%82%D1%80%D0%B8%D1%85%D0%BA%D0%BE%D0%B4%D0%BE%D0%B2" title="Сравнение характеристик штрихкодов"> Сравнение штрихкодов</a></li>
+<li><a href="/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD:%D0%9A%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%8F" title="Шаблон:Криптография"> Криптография</a></li>
+<li><a href="/wiki/Magnet-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0" title="Magnet-ссылка">Magnet-ссылка</a></li>
+<li><a href="/wiki/%D0%9F%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D1%8C_%D0%9C%D0%B5%D1%80%D0%BA%D0%BB%D0%B0" title="Подпись Меркла">Подпись Меркла</a></li>
+<li><a href="/wiki/EDonkey2000_(%D1%81%D0%B5%D1%82%D1%8C)#Хеш-алгоритм_ed2k" title="EDonkey2000 (сеть)"> ed2k</a></li>
+<li><a href="/wiki/URN#Самоидентифицирующий_URN" title="URN"> URN</a></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1384
+Cached time: 20211027165857
+Cache expiry: 86400
+Reduced expiry: true
+Complications: []
+CPU time usage: 0.612 seconds
+Real time usage: 0.872 seconds
+Preprocessor visited node count: 4546/1000000
+Post‐expand include size: 53362/2097152 bytes
+Template argument size: 9695/2097152 bytes
+Highest expansion depth: 16/40
+Expensive parser function count: 23/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 17762/5000000 bytes
+Lua time usage: 0.219/10.000 seconds
+Lua memory usage: 4901104/52428800 bytes
+Number of Wikibase entities loaded: 21/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  762.040      1 -total
+ 22.97%  175.015      2 Шаблон:Source-ref
+ 21.91%  166.973      1 Шаблон:Примечания
+ 20.79%  158.399      1 Шаблон:Карточка_хеш-функции
+ 19.87%  151.413      1 Шаблон:Карточка
+ 10.12%   77.093      1 Шаблон:Книга:Фергюсон_Н.,_Шнайер_Б.:_Практическая_криптография
+ 10.05%   76.592      6 Шаблон:Cite_web
+  9.62%   73.311      1 Шаблон:Публикация
+  7.73%   58.929      2 Шаблон:Wikidata
+  6.24%   47.533      1 Шаблон:Глобализировать
+-->
+
+<!-- Saved in parser cache with key ruwiki:pcache:idhash:1399023-0!canonical and timestamp 20211027165857 and revision id 116346607. Serialized with JSON.
+ -->
+</div><noscript><img src="//ru.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript>
+<div class="printfooter">Источник — <a dir="ltr" href="https://ru.wikipedia.org/w/index.php?title=SHA-2&amp;oldid=116346607">https://ru.wikipedia.org/w/index.php?title=SHA-2&amp;oldid=116346607</a></div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8" title="Служебная:Категории">Категории</a>: <ul><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%A5%D0%B5%D1%88-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8" title="Категория:Хеш-функции">Хеш-функции</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%9A%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5_%D1%85%D0%B5%D1%88-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8" title="Категория:Криптографические хеш-функции">Криптографические хеш-функции</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:Royalty_Free" title="Категория:Royalty Free">Royalty Free</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Скрытые категории: <ul><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8_%D1%81_%D0%BD%D0%B5%D0%BA%D0%BE%D1%80%D1%80%D0%B5%D0%BA%D1%82%D0%BD%D1%8B%D0%BC_%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%D0%BC_%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D0%BE%D0%B2:Cite_web_(%D0%BD%D0%B5_%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D0%BD_%D1%8F%D0%B7%D1%8B%D0%BA)" title="Категория:Википедия:Статьи с некорректным использованием шаблонов:Cite web (не указан язык)">Википедия:Статьи с некорректным использованием шаблонов:Cite web (не указан язык)</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B,_%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D1%8E%D1%89%D0%B8%D0%B5_%D0%B2%D0%BE%D0%BB%D1%88%D0%B5%D0%B1%D0%BD%D1%8B%D0%B5_%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8_ISBN" title="Категория:Страницы, использующие волшебные ссылки ISBN">Страницы, использующие волшебные ссылки ISBN</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B,_%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D1%8E%D1%89%D0%B8%D0%B5_%D0%B2%D0%BE%D0%BB%D1%88%D0%B5%D0%B1%D0%BD%D1%8B%D0%B5_%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8_RFC" title="Категория:Страницы, использующие волшебные ссылки RFC">Страницы, использующие волшебные ссылки RFC</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%9F%D0%A0%D0%9E:%D0%98%D0%A2:%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8_%D0%BF%D0%BE_%D0%B0%D0%BB%D1%84%D0%B0%D0%B2%D0%B8%D1%82%D1%83" title="Категория:ПРО:ИТ:Статьи по алфавиту">ПРО:ИТ:Статьи по алфавиту</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%9F%D0%A0%D0%9E:%D0%98%D0%A2:%D0%9F%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F_%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0:_%D0%B2_%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%BC_%D0%B3%D0%BE%D0%B4%D1%83" title="Категория:ПРО:ИТ:Последняя правка: в текущем году">ПРО:ИТ:Последняя правка: в текущем году</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8_%D1%81_%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC%D0%B8_%D0%B8%D0%B7_%D0%92%D0%B8%D0%BA%D0%B8%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85" title="Категория:Википедия:Статьи с источниками из Викиданных">Википедия:Статьи с источниками из Викиданных</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%93%D0%BB%D0%BE%D0%B1%D0%B0%D0%BB%D0%B8%D0%B7%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C" title="Категория:Википедия:Глобализировать">Википедия:Глобализировать</a></li><li><a href="/wiki/%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F:%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D1%82%D0%B0%D1%82%D1%8C%D0%B8_%D1%81_%D0%BD%D0%B5%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%BC%D0%B8_%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0%D0%BC%D0%B8" title="Категория:Википедия:Статьи с нерабочими ссылками">Википедия:Статьи с нерабочими ссылками</a></li></ul></div></div>
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Навигация</h2>
+	<div id="mw-head">
+		<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-user-menu-legacy vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<h3 id="p-personal-label" aria-label="" class="vector-menu-heading">
+		
+		<span>Персональные инструменты</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-anonuserpage" class="mw-list-item"><span>Вы не представились системе</span></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9C%D0%BE%D1%91_%D0%BE%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5" title="Страница обсуждений для моего IP [n]" accesskey="n"><span>Обсуждение</span></a></li><li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9C%D0%BE%D0%B9_%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4" title="Список правок, сделанных с этого IP-адреса [y]" accesskey="y"><span>Вклад</span></a></li><li id="pt-createaccount" class="mw-list-item"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C_%D1%83%D1%87%D1%91%D1%82%D0%BD%D1%83%D1%8E_%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C&amp;returnto=SHA-2" title="Мы предлагаем вам создать учётную запись и войти в систему, хотя это и не обязательно."><span>Создать учётную запись</span></a></li><li id="pt-login" class="mw-list-item"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%92%D1%85%D0%BE%D0%B4&amp;returnto=SHA-2" title="Здесь можно зарегистрироваться в системе, но это необязательно. [o]" accesskey="o"><span>Войти</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<h3 id="p-namespaces-label" aria-label="" class="vector-menu-heading">
+		
+		<span>Пространства имён</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="/wiki/SHA-2" title="Просмотр основной страницы [c]" accesskey="c"><span>Статья</span></a></li><li id="ca-talk" class="mw-list-item"><a href="/wiki/%D0%9E%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5:SHA-2" rel="discussion" title="Обсуждение основной страницы [t]" accesskey="t"><span>Обсуждение</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label" aria-label="Change language variant" class="vector-menu-heading">
+		
+		<span>Варианты</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<h3 id="p-views-label" aria-label="" class="vector-menu-heading">
+		
+		<span>Просмотры</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="/wiki/SHA-2"><span>Читать</span></a></li><li id="ca-ve-edit" class="mw-list-item"><a href="/w/index.php?title=SHA-2&amp;veaction=edit" title="Редактировать данную страницу [v]" accesskey="v"><span>Править</span></a></li><li id="ca-edit" class="collapsible mw-list-item"><a href="/w/index.php?title=SHA-2&amp;action=edit" title="Эту статью можно изменять. Перед сохранением изменений, пожалуйста, нажмите кнопку предварительного просмотра для визуальной проверки результата [e]" accesskey="e"><span>Править код</span></a></li><li id="ca-history" class="mw-list-item"><a href="/w/index.php?title=SHA-2&amp;action=history" title="Журнал изменений страницы [h]" accesskey="h"><span>История</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="Больше возможностей"
+	 >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label" aria-label="" class="vector-menu-heading">
+		
+		<span>Ещё</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			<div id="p-search" role="search" class=" vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Поиск</label>
+			</h3>
+		<form action="/w/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Искать в Википедии" aria-label="Искать в Википедии" autocapitalize="sentences" title="Искать в Википедии [f]" accesskey="f" id="searchInput"
+				/>
+				<input type="hidden" name="title" value="Служебная:Поиск"/>
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Найти страницы, содержащие указанный текст" value="Найти" />
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Перейти к странице, имеющей в точности такое название" value="Перейти" />
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0"
+			title="Перейти на заглавную страницу"></a>
+	</div>
+	<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<h3 id="p-navigation-label" aria-label="" class="vector-menu-heading">
+		
+		<span>Навигация</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Перейти на заглавную страницу [z]" accesskey="z"><span>Заглавная страница</span></a></li><li id="n-browse" class="mw-list-item"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9F%D0%BE%D0%B8%D1%81%D0%BA_%D0%BF%D0%BE_%D0%BA%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D1%8F%D0%BC" title="Поиск по категориям"><span>Рубрикация</span></a></li><li id="n-index" class="mw-list-item"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%90%D0%BB%D1%84%D0%B0%D0%B2%D0%B8%D1%82%D0%BD%D1%8B%D0%B9_%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C" title="Поиск по двум первым буквам"><span>Указатель А — Я</span></a></li><li id="n-featured" class="mw-list-item"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%98%D0%B7%D0%B1%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5_%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8" title="Статьи, считающиеся лучшими статьями проекта"><span>Избранные статьи</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BB%D1%83%D1%87%D0%B0%D0%B9%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0" title="Посмотреть случайно выбранную страницу [x]" accesskey="x"><span>Случайная страница</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D0%BB:%D0%A2%D0%B5%D0%BA%D1%83%D1%89%D0%B8%D0%B5_%D1%81%D0%BE%D0%B1%D1%8B%D1%82%D0%B8%D1%8F" title="Статьи о текущих событиях в мире"><span>Текущие события</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	<nav id="p-participation" class="mw-portlet mw-portlet-participation vector-menu vector-menu-portal portal" aria-labelledby="p-participation-label" role="navigation" 
+	 >
+	<h3 id="p-participation-label" aria-label="" class="vector-menu-heading">
+		
+		<span>Участие</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-bug_in_article" class="mw-list-item"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F_%D0%BE%D0%B1_%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%D1%85" title="Сообщить об ошибке в этой статье"><span>Сообщить об ошибке</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%BE" title="О проекте, о том, чем здесь можно заниматься, а также — где что находится"><span>Сообщество</span></a></li><li id="n-forum" class="mw-list-item"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A4%D0%BE%D1%80%D1%83%D0%BC" title="Форум участников Википедии"><span>Форум</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%B2%D0%B5%D0%B6%D0%B8%D0%B5_%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B8" title="Список последних изменений [r]" accesskey="r"><span>Свежие правки</span></a></li><li id="n-newpages" class="mw-list-item"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9D%D0%BE%D0%B2%D1%8B%D0%B5_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B" title="Список недавно созданных страниц"><span>Новые страницы</span></a></li><li id="n-help" class="mw-list-item"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B0" title="Место расположения Справки"><span>Справка</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_ru.wikipedia.org&amp;uselang=ru" title="Поддержите нас"><span>Пожертвовать</span></a></li></ul>
+		
+	</div>
+</nav>
+<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<h3 id="p-tb-label" aria-label="" class="vector-menu-heading">
+		
+		<span>Инструменты</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B8_%D1%81%D1%8E%D0%B4%D0%B0/SHA-2" title="Список всех страниц, ссылающихся на данную [j]" accesskey="j"><span>Ссылки сюда</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%B2%D1%8F%D0%B7%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B8/SHA-2" rel="nofollow" title="Последние изменения в страницах, на которые ссылается эта страница [k]" accesskey="k"><span>Связанные правки</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A1%D0%BF%D0%B5%D1%86%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B" title="Список служебных страниц [q]" accesskey="q"><span>Служебные страницы</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=SHA-2&amp;oldid=116346607" title="Постоянная ссылка на эту версию страницы"><span>Постоянная ссылка</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=SHA-2&amp;action=info" title="Подробнее об этой странице"><span>Сведения о странице</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%A6%D0%B8%D1%82%D0%B0%D1%82%D0%B0&amp;page=SHA-2&amp;id=116346607&amp;wpFormIdentifier=titleform" title="Информация о том, как цитировать эту страницу"><span>Цитировать страницу</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1968605" title="Ссылка на связанный элемент репозитория данных [g]" accesskey="g"><span>Элемент Викиданных</span></a></li></ul>
+		
+	</div>
+</nav>
+<nav id="p-coll-print_export" class="mw-portlet mw-portlet-coll-print_export vector-menu vector-menu-portal portal" aria-labelledby="p-coll-print_export-label" role="navigation" 
+	 >
+	<h3 id="p-coll-print_export-label" aria-label="" class="vector-menu-heading">
+		
+		<span>Печать/экспорт</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="coll-create_a_book" class="mw-list-item"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:%D0%9A%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D1%8F_%D0%BA%D0%BD%D0%B8%D0%B3&amp;bookcmd=book_creator&amp;referer=SHA-2"><span>Создать книгу</span></a></li><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=%D0%A1%D0%BB%D1%83%D0%B6%D0%B5%D0%B1%D0%BD%D0%B0%D1%8F:DownloadAsPdf&amp;page=SHA-2&amp;action=show-download-screen"><span>Скачать как PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=SHA-2&amp;printable=yes" title="Версия этой страницы для печати [p]" accesskey="p"><span>Версия для печати</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	<nav id="p-lang" class="mw-portlet mw-portlet-lang vector-menu vector-menu-portal portal" aria-labelledby="p-lang-label" role="navigation" 
+	 >
+	<h3 id="p-lang-label" aria-label="" class="vector-menu-heading">
+		
+		<span>На других языках</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/SHA-2" title="SHA-2 — немецкий" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-en mw-list-item"><a href="https://en.wikipedia.org/wiki/SHA-2" title="SHA-2 — английский" lang="en" hreflang="en" class="interlanguage-link-target"><span>English</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/SHA-2" title="SHA-2 — испанский" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-eu mw-list-item"><a href="https://eu.wikipedia.org/wiki/SHA-2" title="SHA-2 — баскский" lang="eu" hreflang="eu" class="interlanguage-link-target"><span>Euskara</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%A7%D8%B3%E2%80%8C%D8%A7%DA%86%E2%80%8C%D8%A7%DB%8C-%DB%B2" title="اس‌اچ‌ای-۲ — персидский" lang="fa" hreflang="fa" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/SHA-2" title="SHA-2 — французский" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-he mw-list-item"><a href="https://he.wikipedia.org/wiki/SHA-2" title="SHA-2 — иврит" lang="he" hreflang="he" class="interlanguage-link-target"><span>עברית</span></a></li><li class="interlanguage-link interwiki-hr mw-list-item"><a href="https://hr.wikipedia.org/wiki/SHA-2" title="SHA-2 — хорватский" lang="hr" hreflang="hr" class="interlanguage-link-target"><span>Hrvatski</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/SHA-2" title="SHA-2 — японский" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/SHA-2" title="SHA-2 — корейский" lang="ko" hreflang="ko" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-lv mw-list-item"><a href="https://lv.wikipedia.org/wiki/Dro%C5%A1ais_jauk%C5%A1anas_algoritms_2" title="Drošais jaukšanas algoritms 2 — латышский" lang="lv" hreflang="lv" class="interlanguage-link-target"><span>Latviešu</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/SHA-2" title="SHA-2 — польский" lang="pl" hreflang="pl" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.wikipedia.org/wiki/SHA-2" title="SHA-2 — португальский" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ro mw-list-item"><a href="https://ro.wikipedia.org/wiki/SHA-2" title="SHA-2 — румынский" lang="ro" hreflang="ro" class="interlanguage-link-target"><span>Română</span></a></li><li class="interlanguage-link interwiki-sr mw-list-item"><a href="https://sr.wikipedia.org/wiki/SHA-2" title="SHA-2 — сербский" lang="sr" hreflang="sr" class="interlanguage-link-target"><span>Српски / srpski</span></a></li><li class="interlanguage-link interwiki-tr mw-list-item"><a href="https://tr.wikipedia.org/wiki/SHA-2" title="SHA-2 — турецкий" lang="tr" hreflang="tr" class="interlanguage-link-target"><span>Türkçe</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/SHA-2" title="SHA-2 — украинский" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-uz mw-list-item"><a href="https://uz.wikipedia.org/wiki/SHA-2" title="SHA-2 — узбекский" lang="uz" hreflang="uz" class="interlanguage-link-target"><span>Oʻzbekcha/ўзбекча</span></a></li><li class="interlanguage-link interwiki-wuu mw-list-item"><a href="https://wuu.wikipedia.org/wiki/SHA-2" title="SHA-2 — ву" lang="wuu" hreflang="wuu" class="interlanguage-link-target"><span>吴语</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/SHA-2" title="SHA-2 — китайский" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li><li class="interlanguage-link interwiki-zh-min-nan mw-list-item"><a href="https://zh-min-nan.wikipedia.org/wiki/SHA-2" title="SHA-2 — Chinese (Min Nan)" lang="nan" hreflang="nan" class="interlanguage-link-target"><span>Bân-lâm-gú</span></a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1968605#sitelinks-wikipedia" title="Править межъязыковые ссылки" class="wbc-editpage">Править ссылки</a></span></div>
+	</div>
+</nav>
+
+</div>
+
+</div>
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> Эта страница в последний раз была отредактирована 29 августа 2021 в 11:34.</li>
+	<li id="footer-info-copyright">Текст доступен по <a rel="license" href="//ru.wikipedia.org/wiki/Википедия:Текст_лицензии_Creative_Commons_Attribution-ShareAlike_3.0_Unported">лицензии Creative Commons Attribution-ShareAlike</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>; в отдельных случаях могут действовать дополнительные условия.
+<span class="noprint">Подробнее см. <a href="//foundation.wikimedia.org/wiki/Terms_of_Use/ru">Условия использования</a>.</span><br>
+Wikipedia® — зарегистрированный товарный знак некоммерческой организации <a href="//wikimediafoundation.org">Wikimedia Foundation, Inc.</a></li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://meta.wikimedia.org/wiki/Privacy_policy/ru" class="extiw" title="m:Privacy policy/ru">Политика конфиденциальности</a></li>
+	<li id="footer-places-about"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5" title="Википедия:Описание">Описание Википедии</a></li>
+	<li id="footer-places-disclaimer"><a href="/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%9E%D1%82%D0%BA%D0%B0%D0%B7_%D0%BE%D1%82_%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8" title="Википедия:Отказ от ответственности">Отказ от ответственности</a></li>
+	<li id="footer-places-contact"><a href="//ru.wikipedia.org/wiki/Википедия:Контакты">Свяжитесь с нами</a></li>
+	<li id="footer-places-mobileview"><a href="//ru.m.wikipedia.org/w/index.php?title=SHA-2&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Мобильная версия</a></li>
+	<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Разработчики</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/ru.wikipedia.org">Статистика</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Заявление о куки</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.612","walltime":"0.872","ppvisitednodes":{"value":4546,"limit":1000000},"postexpandincludesize":{"value":53362,"limit":2097152},"templateargumentsize":{"value":9695,"limit":2097152},"expansiondepth":{"value":16,"limit":40},"expensivefunctioncount":{"value":23,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":17762,"limit":5000000},"entityaccesscount":{"value":21,"limit":400},"timingprofile":["100.00%  762.040      1 -total"," 22.97%  175.015      2 Шаблон:Source-ref"," 21.91%  166.973      1 Шаблон:Примечания"," 20.79%  158.399      1 Шаблон:Карточка_хеш-функции"," 19.87%  151.413      1 Шаблон:Карточка"," 10.12%   77.093      1 Шаблон:Книга:Фергюсон_Н.,_Шнайер_Б.:_Практическая_криптография"," 10.05%   76.592      6 Шаблон:Cite_web","  9.62%   73.311      1 Шаблон:Публикация","  7.73%   58.929      2 Шаблон:Wikidata","  6.24%   47.533      1 Шаблон:Глобализировать"]},"scribunto":{"limitreport-timeusage":{"value":"0.219","limit":"10.000"},"limitreport-memusage":{"value":4901104,"limit":52428800},"limitreport-logs":"Loaded datatype wikibase-item of P178 from wikidata, consider passing datatype argument to formatProperty call or to Wikidata/config\nLoaded datatype wikibase-item of P155 from wikidata, consider passing datatype argument to formatProperty call or to Wikidata/config\nLoaded datatype wikibase-item of P156 from wikidata, consider passing datatype argument to formatProperty call or to Wikidata/config\nGot person name of Q27882148 from label: «Henri Gilbert»\ntokenizeName: «Henri Gilbert»: have «Im (x1) Fa» match\nGot person name of Q27882149 from label: «Helena Handschuh»\ntokenizeName: «Helena Handschuh»: have «Im (x1) Fa» match\nGot person name of Q1607335 from label: «Mitsuru Matsui»\ntokenizeName: «Mitsuru Matsui»: have «Im (x1) Fa» match\nGot person name of Q27882157 from label: «Robert J. Zuccherato»\ntokenizeName: «Robert J. Zuccherato»: have «Im (x2) Fa» match\nGot title of Q21587985 from label: «Springer Berlin Heidelberg»\nGot title of Q924044 from label: «Lecture Notes in Computer Science»\nGot person name of Q22036631 from label: «Florian Mendel»\ntokenizeName: «Florian Mendel»: have «Im (x1) Fa» match\nGot person name of Q22131844 from label: «Tomislav Nad»\ntokenizeName: «Tomislav Nad»: have «Im (x1) Fa» match\nGot person name of Q22022507 from label: «Martin Schläffer»\ntokenizeName: «Martin Schläffer»: have «Im (x1) Fa» match\nCustom label provided for Q28002950\ntokenizeName: «Thomas Johansson»: have «Im (x1) Fa» match\nCustom label provided for Q21683980\ntokenizeName: «Phong Q. Nguyen»: have «Im (x2) Fa» match\nGot title of Q21587985 from label: «Springer Berlin Heidelberg»\n"},"cachereport":{"origin":"mw1384","timestamp":"20211027165857","ttl":86400,"transientcontent":true}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"SHA-2","url":"https:\/\/ru.wikipedia.org\/wiki\/SHA-2","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1968605","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1968605","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"\u0424\u043e\u043d\u0434 \u0412\u0438\u043a\u0438\u043c\u0435\u0434\u0438\u0430","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2008-09-21T20:10:26Z","dateModified":"2021-08-29T11:34:49Z","headline":"\u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u044b\u0439 \u0430\u043b\u0433\u043e\u0440\u0438\u0442\u043c \u0445\u0435\u0448\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":157,"wgHostname":"mw1350"});});</script>
+</body></html>
